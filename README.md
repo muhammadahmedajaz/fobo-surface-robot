@@ -101,7 +101,7 @@ Every chart is generated from source-derived parameters or the included nominal 
 - The clip demonstrates the surface platform. It is not a time-synchronised firmware validation log.
 - This repository contains RC control and a separate simulation study. Vision/autonomy extension scripts are not included.
 
-Maintained by [Muhammad Ahmed](https://github.com/muhammadahmedajaz). Credit to the FOBO team for the physical project. Third-party libraries retain their own licences; see [credits](docs/credits.md).
+Maintained by [Muhammad Ahmed](https://github.com/muhammadahmedajaz). Credit to Muhammad Ahmed and his teammate for the physical project. Third-party libraries retain their own licences; see [credits](docs/credits.md).
 
 [Changelog](CHANGELOG.md) · [Reproduction and test record](docs/validation.md) · [MIT licence](LICENSE)
 
