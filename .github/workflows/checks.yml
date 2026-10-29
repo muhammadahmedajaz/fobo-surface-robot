@@ -1,0 +1,42 @@
+name: Build and analysis checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python tools/generate_figures.py --output-dir "$RUNNER_TEMP/fobo-generated"
+
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+        with:
+          version: '1.x'
+      - name: Install reference ESP32 core
+        run: |
+          arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core install esp32:esp32@3.3.0 --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+      - name: Install servo dependencies
+        run: |
+          arduino-cli lib install "Adafruit BusIO@1.17.4"
+          arduino-cli lib install "Adafruit PWM Servo Driver Library@3.0.3" --no-deps
+      - name: Compile transmitter and integrated receiver
+        run: |
+          arduino-cli compile --fqbn esp32:esp32:esp32 firmware/transmitter
+          arduino-cli compile --fqbn esp32:esp32:esp32 firmware/receiver

@@ -1,0 +1,23 @@
+{
+  "firmware": {
+    "SERVO_FREQ": 50,
+    "SERVOMIN_US": 600,
+    "SERVOMAX_US": 2400,
+    "SERVO_CENTER": 90,
+    "SERVO_MAX_OFFSET": 100,
+    "JOYSTICK_DEAD": 50,
+    "TURN_THRESHOLD": 200,
+    "LEDC_RES": 10,
+    "LEDC_FREQ": 10000
+  },
+  "heading": {
+    "K": 0.5,
+    "T": 0.8,
+    "Kp": 3.0,
+    "Ki": 0.8,
+    "Kd": 0.4
+  },
+  "receiver_sha256": "6925ecad11cac2a30fdac9d7a3508fd92ac214be6714e4537fe78318b8c6ca20",
+  "source": "Supplied hardware-tested receiver; command maps are calculated, not measured.",
+  "model_status": "Nominal linear simulation; parameters have not been identified from water-test data."
+}

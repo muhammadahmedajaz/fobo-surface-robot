@@ -1,0 +1,22 @@
+{
+  "status": "Calculated nominal-model results; not hardware measurements.",
+  "reference_deg": 45,
+  "overshoot_percent": 33.72560676215594,
+  "sampled_2pct_settling_time_s": 8.9,
+  "horizon_s": 20,
+  "sample_interval_s": 0.025,
+  "closed_loop_poles": [
+    {
+      "real": -0.581414601118752,
+      "imag": 1.069992996157441
+    },
+    {
+      "real": -0.581414601118752,
+      "imag": -1.069992996157441
+    },
+    {
+      "real": -0.337170797762497,
+      "imag": 0.0
+    }
+  ]
+}

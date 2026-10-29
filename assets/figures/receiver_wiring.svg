@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="840.96pt" height="516.239719pt" viewBox="0 0 840.96 516.239719" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>FOBO reproducible analysis</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 516.239719 
+L 840.96 516.239719 
+L 840.96 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 80.6832 345.16224 
+L 250.9848 345.16224 
+Q 265.0464 345.16224 265.0464 337.17888 
+L 265.0464 85.25952 
+Q 265.0464 77.27616 250.9848 77.27616 
+L 80.6832 77.27616 
+Q 66.6216 77.27616 66.6216 85.25952 
+L 66.6216 337.17888 
+Q 66.6216 345.16224 80.6832 345.16224 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #22577a; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 369.7272 118.96704 
+L 790.0128 118.96704 
+Q 804.0744 118.96704 804.0744 110.98368 
+L 804.0744 60.86592 
+Q 804.0744 52.88256 790.0128 52.88256 
+L 369.7272 52.88256 
+Q 355.6656 52.88256 355.6656 60.86592 
+L 355.6656 110.98368 
+Q 355.6656 118.96704 369.7272 118.96704 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #087f8c; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 257.67125 86.14656 
+Q 310.354613 86.14656 361.472729 86.14656 
+" clip-path="url(#p5c5601f95d)" style="fill: none; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 356.272729 83.54656 
+L 361.472729 86.14656 
+L 356.272729 88.74656 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #5b6d77; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 369.7272 189.93024 
+L 790.0128 189.93024 
+Q 804.0744 189.93024 804.0744 181.94688 
+L 804.0744 131.82912 
+Q 804.0744 123.84576 790.0128 123.84576 
+L 369.7272 123.84576 
+Q 355.6656 123.84576 355.6656 131.82912 
+L 355.6656 181.94688 
+Q 355.6656 189.93024 369.7272 189.93024 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #087f8c; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 257.67125 157.10976 
+Q 310.354613 157.10976 361.472729 157.10976 
+" clip-path="url(#p5c5601f95d)" style="fill: none; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 356.272729 154.50976 
+L 361.472729 157.10976 
+L 356.272729 159.70976 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #5b6d77; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 369.7272 260.89344 
+L 790.0128 260.89344 
+Q 804.0744 260.89344 804.0744 252.91008 
+L 804.0744 202.79232 
+Q 804.0744 194.80896 790.0128 194.80896 
+L 369.7272 194.80896 
+Q 355.6656 194.80896 355.6656 202.79232 
+L 355.6656 252.91008 
+Q 355.6656 260.89344 369.7272 260.89344 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #087f8c; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 257.67125 228.07296 
+Q 310.354613 228.07296 361.472729 228.07296 
+" clip-path="url(#p5c5601f95d)" style="fill: none; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 356.272729 225.47296 
+L 361.472729 228.07296 
+L 356.272729 230.67296 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #5b6d77; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 369.7272 331.85664 
+L 790.0128 331.85664 
+Q 804.0744 331.85664 804.0744 323.87328 
+L 804.0744 273.75552 
+Q 804.0744 265.77216 790.0128 265.77216 
+L 369.7272 265.77216 
+Q 355.6656 265.77216 355.6656 273.75552 
+L 355.6656 323.87328 
+Q 355.6656 331.85664 369.7272 331.85664 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #087f8c; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 257.67125 299.03616 
+Q 310.354613 299.03616 361.472729 299.03616 
+" clip-path="url(#p5c5601f95d)" style="fill: none; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 356.272729 296.43616 
+L 361.472729 299.03616 
+L 356.272729 301.63616 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #5b6d77; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 369.7272 438.30144 
+L 555.6528 438.30144 
+Q 569.7144 438.30144 569.7144 430.31808 
+L 569.7144 373.54752 
+Q 569.7144 365.56416 555.6528 365.56416 
+L 369.7272 365.56416 
+Q 355.6656 365.56416 355.6656 373.54752 
+L 355.6656 430.31808 
+Q 355.6656 438.30144 369.7272 438.30144 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #d96c2c; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 627.5232 438.30144 
+L 790.0128 438.30144 
+Q 804.0744 438.30144 804.0744 430.31808 
+L 804.0744 373.54752 
+Q 804.0744 365.56416 790.0128 365.56416 
+L 627.5232 365.56416 
+Q 613.4616 365.56416 613.4616 373.54752 
+L 613.4616 430.31808 
+Q 613.4616 438.30144 627.5232 438.30144 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #f4f8fa; stroke: #d96c2c; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 226.256368 340.649132 
+Q 294.735468 370.887931 361.782707 400.494454 
+" clip-path="url(#p5c5601f95d)" style="fill: none; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 358.076101 396.015496 
+L 361.782707 400.494454 
+L 355.975577 400.772365 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #5b6d77; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 562.342588 401.9328 
+Q 591.590547 401.9328 619.273259 401.9328 
+" clip-path="url(#p5c5601f95d)" style="fill: none; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 614.073259 399.3328 
+L 619.273259 401.9328 
+L 614.073259 404.5328 
+z
+" clip-path="url(#p5c5601f95d)" style="fill: #5b6d77; stroke: #5b6d77; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="68.184" y="24.9408" transform="rotate(-0 68.184 24.9408)">FOBO | receiver signal wiring</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #22577a" x="165.834" y="110.915081" transform="rotate(-0 165.834 110.915081)">ESP32 receiver</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(123.647281 177.007998)">Motor PWM pairs</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(165.834 190.10542)"/>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(134.357438 203.202842)">GPIO 25 / 26</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(134.357438 216.300264)">GPIO 27 / 14</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(134.357438 229.397686)">GPIO 23 / 22</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(134.357438 242.495108)">GPIO 21 / 17</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(165.834 255.59253)"/>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(115.01525 268.689952)">I²C: SDA 32 / SCL 33</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="579.87" y="86.521481" transform="rotate(-0 579.87 86.521481)">Motor index 0</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="579.87" y="97.437387" transform="rotate(-0 579.87 97.437387)">GPIO 25 → RPWM  |  26 → LPWM</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="579.87" y="157.484681" transform="rotate(-0 579.87 157.484681)">Motor index 1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="579.87" y="168.400587" transform="rotate(-0 579.87 168.400587)">GPIO 27 → RPWM  |  14 → LPWM</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="579.87" y="228.447881" transform="rotate(-0 579.87 228.447881)">Motor index 2</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="579.87" y="239.363787" transform="rotate(-0 579.87 239.363787)">GPIO 23 → RPWM  |  22 → LPWM</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="579.87" y="299.411081" transform="rotate(-0 579.87 299.411081)">Motor index 3</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="579.87" y="310.326987" transform="rotate(-0 579.87 310.326987)">GPIO 21 → RPWM  |  17 → LPWM</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #d96c2c" x="462.69" y="399.251206" transform="rotate(-0 462.69 399.251206)">PCA9685 | 0x40</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="462.69" y="413.562575" transform="rotate(-0 462.69 413.562575)">SDA 32 / SCL 33</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #d96c2c" x="708.768" y="398.443237" transform="rotate(-0 708.768 398.443237)">Servo outputs</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="708.768" y="413.286637" transform="rotate(-0 708.768 413.286637)">0 FL · 1 FR · 2 RL · 3 RR</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #5b6d77" x="283.014" y="373.104" transform="rotate(-0 283.014 373.104)">I²C</text>
+   </g>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5b6d77" x="7.2" y="507.168" transform="rotate(-0 7.2 507.168)">Signal mapping only. Match motor indices to your physical installation; enable inputs and power rails are documented in docs/build-guide.md.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5c5601f95d">
+   <rect x="52.56" y="7.2" width="781.2" height="443.52"/>
+  </clipPath>
+ </defs>
+</svg>
