@@ -1,8 +1,8 @@
 # FOBO build views and demonstrations
 
-This folder combines construction photographs from Ahmed's project report, excerpts from original uploaded videos, and frames from two earlier edited project reels.
+Construction photographs and operating footage document the physical FOBO platform.
 
-## Earlier edited reels
+## Edited project reels
 
 The earlier reel sources are:
 
@@ -19,7 +19,7 @@ Both reels show the physical FOBO robot. They contain editing, captions and shot
 | `pool-overview.jpg` | First reel at approximately 14.1 s |
 | `outdoor-three-quarter.jpg` | Second reel at approximately 2.7 s |
 
-The first three reel stills are resized to 640 pixels wide. `fobo-hero.jpg` is a full-resolution frame at 14.1 s of the first reel, selected for its closer view of the hull, central bay and rear propellers. Existing captions remain in these images.
+The first three reel stills are resized to 640 pixels wide. `fobo-hero.jpg` is a full-resolution frame at 14.1 s of the first reel. These reel stills retain their captions. The repository cover uses the separate vector project banner; the main pool photograph is the rear operating view listed below.
 
 ## Original uploaded footage
 
@@ -42,6 +42,6 @@ Additional supplied recordings `1000167339.mp4`, `1000167340.mp4`, `1000167341.m
 
 `xps-hull-shaping.png`, `xps-twin-hull-top.png` and `xps-twin-hull-angle.png` are the three foam-stage photographs embedded in PDF page 49 of the supplied `proj_rep (4).pdf`. `fiberglass-layup-1.jpg` through `fiberglass-layup-3.jpg` are its three related fiberglass-work photographs. Embedded image bytes are preserved; no construction stages or components have been generated.
 
-The report's illustrated architecture and propeller rendering are not included as photographs of the built robot. See the [report cross-check](../../docs/report-cross-check.md) for other limitations of that source.
+See the [implementation notes](../../docs/report-cross-check.md) for the relationship between the project report and the published controller.
 
-The mechanical-layout, propulsion-mode and actuator-packaging figures in `assets/figures/` are explanatory drawings based on the build notes and Ahmed's account. They are distinct from these photographs of the actual robot. No hardware has been added to or removed from the photographs.
+The mechanical-layout, propulsion-mode and actuator-packaging figures in `assets/figures/` are explanatory drawings based on the project's construction account. They are distinct from these photographs of the actual robot. No hardware has been added to or removed from the photographs.

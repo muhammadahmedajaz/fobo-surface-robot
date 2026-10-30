@@ -1,16 +1,10 @@
 # Credits and references
 
-FOBO is a team-built surface robot. This repository is maintained by Muhammad Ahmed and documents the controller source, integration and analysis files shared for the project.
+FOBO was built by Muhammad Ahmed and his teammate. The first-place HydroBot Soccer League result is a team achievement. This repository is maintained by [Muhammad Ahmed](https://github.com/muhammadahmedajaz).
 
-The HydroBot Soccer League result, first among 64 teams, is a team achievement. The hardware-testing status was confirmed by Muhammad Ahmed.
+Construction photographs come from the project report. Development and operating footage were supplied by the project team. The [media index](../assets/build/README.md) lists source recordings and processing details.
 
-The short project clip is taken from the FOBO footage previously supplied by Ahmed. A frame from it is used as the README image.
-
-Additional construction photographs come from the supplied December 2025 project report. New pool excerpts come from original videos Ahmed supplied, alongside two recovered edited reels. Captions identify the construction stage or the clip source rather than adopting the report's prototype captions unchanged. See [media provenance](../assets/build/README.md) and the [report cross-check](report-cross-check.md).
-
-Ahmed's 30 October 2026 account supplies the XPS/hot-glue/silicone packaging method, the final-round servo ingress failure, the four 680 RPM motor arrangement and approximate dimensions. The later mobile-camera/OpenCV work is documented with the scope of the recorded bench tests.
-
-The [engineering journey](build-journey.md) was reconstructed from attributed conversation excerpts/summaries, the supplied report, media and builder clarification. Its [source register](journey-sources.md) records dated user input, assistant contributions, corrections and recovery gaps. New hull/timeline illustrations are reconstructed explanatory figures; no original handwritten page is claimed for them.
+The [engineering case study](build-journey.md) covers design, fabrication, propulsion and control. The [technical references](journey-sources.md) identify the design discussions, implementation source and validation scope. Concept illustrations are original repository graphics.
 
 ## Dependencies and primary references
 

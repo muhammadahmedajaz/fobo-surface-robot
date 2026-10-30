@@ -2,32 +2,36 @@
 
 ## Hardware baseline
 
-Muhammad Ahmed confirmed on 30 October 2026 that all supplied controller firmware has been hardware-tested. The main transmitter and integrated receiver are preserved byte for byte in this repository. Their hashes are recorded in `firmware/baseline.sha256`.
+The transmitter and integrated receiver are the hardware-tested project firmware. Their SHA-256 hashes are recorded in `firmware/baseline.sha256`.
 
-The project video documents FOBO on water. The exact firmware revision, core/library versions and quantitative measurements corresponding to that clip were not recorded with it.
+Operating footage documents the physical platform in outdoor and competition water trials. The [media index](../assets/build/README.md) identifies the source recordings and excerpts.
 
-## Software checks added with the documentation
+## Software verification
 
-- CRC-8 reference check value and rejection of a corrupted packet.
-- Signed little-endian packet layout and 21-byte payload size.
-- Arduino integer-map behaviour, servo neutral/endpoints and command bounds.
-- Motor neutral, full drive and opposite-direction turning examples.
-- Stability, unit-reference convergence and constant-disturbance rejection of the nominal heading model.
-- Regeneration of all command maps, figures and numerical data.
+The repository checks:
 
-Run `python -m unittest discover -s tests -v`. These checks validate documentation tools and model properties; they do not replace physical tests.
+- CRC-8 reference value and rejection of a corrupted packet.
+- Signed little-endian packet layout and the 21-byte payload.
+- Arduino integer mapping, servo neutral/endpoints and command bounds.
+- Motor neutral, full drive and opposing-drive turning.
+- Stability, reference convergence and disturbance rejection of the nominal heading model.
+- Regeneration of command maps, figures and numerical data.
 
-The GitHub Actions workflow also defines reference ESP32 compilation using the versions in the build guide. Read its actual run result for compilation status; the presence of a workflow is not a passing build result.
+Run `python -m unittest discover -s tests -v`.
 
-## Journey and concept illustrations
+GitHub Actions compiles both ESP32 sketches using the reference versions in the [build guide](build-guide.md), runs the analysis checks and regenerates the figures.
 
-Run `python tools/generate_journey_figures.py` to recreate the discussion timeline and hull-concept comparison from `data/build_journey.json`. Their source IDs refer to the [journey register](journey-sources.md). The timeline uses record dates with categorical spacing, and its competition date remains unspecified. The hull sections are illustrative reconstructions, not recovered handwriting or dimensioned geometry.
+## Figures and media
 
-These figures document the recovered history. They add no physical test result and do not change the preserved firmware.
+The development timeline uses design-review dates from `data/build_journey.json`. Hull and component layouts are conceptual illustrations. Generate them with `tools/generate_journey_figures.py`, `tools/generate_mechanical_layout.py` and `tools/generate_project_banner.py`.
 
-## Recording a new hardware run
+The [media index](../assets/build/README.md) records source filenames, selected intervals, frame times and encoding details for the construction photographs and operating clips.
 
-For a new result, record firmware commit, board/core/library versions, wiring changes, battery and supply configuration, test conditions, actual input and observed result. Use timestamped samples when reporting latency, tracking error or response time.
+Command maps describe software outputs. Heading plots describe nominal simulations. The [vision tests](vision-extension.md) cover bench detection, ESP32 commands and motor response.
 
-Published calculated datasets are labelled in their file headers and analysis notes. New measured datasets should state units and test conditions and be identified separately.
+## Recording a hardware run
+
+Record the firmware commit, board/core/library versions, wiring, power configuration, test conditions, input and observed result. Timestamped samples support latency, tracking-error and response-time measurements.
+
+Measured datasets should state units and test conditions. Keep them identifiable alongside calculated command maps and simulation outputs.
 

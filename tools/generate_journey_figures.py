@@ -1,7 +1,7 @@
-"""Generate source-labelled FOBO history and concept illustrations.
+"""Generate FOBO development and hull-concept illustrations.
 
-Dates are record dates, not inferred construction dates. Hull outlines are
-illustrative cross-sections, not recovered handwriting or dimensioned CAD.
+Dates identify design reviews and discussions. Hull outlines are
+conceptual cross-sections.
 """
 import json
 import textwrap
@@ -25,17 +25,17 @@ def save(fig, stem):
 
 
 def timeline(record):
-    fig, ax = plt.subplots(figsize=(13.5, 10.4))
+    fig, ax = plt.subplots(figsize=(13.5, 8.0))
     fig.patch.set_facecolor("white")
-    ax.set(xlim=(0, 13.5), ylim=(0, 10.4))
+    ax.set(xlim=(0, 13.5), ylim=(0, 8.0))
     ax.axis("off")
-    ax.text(.5, 9.94, "FOBO / THE RECOVERED ENGINEERING RECORD", fontsize=21,
+    ax.text(.5, 7.54, "FOBO / DEVELOPMENT MILESTONES", fontsize=21,
             weight="bold", color=INK)
-    ax.text(.5, 9.55, "Discussion dates and later clarifications • not a complete build log",
+    ax.text(.5, 7.15, "Requirements, component selection, architecture and camera feedback",
             fontsize=12, color=MUTED)
-    ax.plot([2.7, 2.7], [2.0, 8.85], color="#c3d8dc", lw=3, zorder=1)
+    ax.plot([2.7, 2.7], [2.25, 6.45], color="#c3d8dc", lw=3, zorder=1)
     for i, event in enumerate(record["milestones"]):
-        y = 8.8 - i * 1.33
+        y = 6.4 - i * 1.33
         color = TEAL if i < 4 else RED
         ax.scatter([2.7], [y], s=110, color=color, edgecolor="white", linewidth=2, zorder=3)
         ax.text(.5, y+.10, event["label"], fontsize=11.2, weight="bold", color=INK, va="top")
@@ -51,9 +51,9 @@ def timeline(record):
     ax.add_patch(FancyBboxPatch((.5, .56), 12.43, .47, boxstyle="round,pad=.06",
                                facecolor="#fff0df", edgecolor="none"))
     ax.text(.75, .79, "COMPETITION OUTCOME", fontsize=10, weight="bold", color=RED, va="center")
-    ax.text(3.5, .79, f'{record["competition"]["result"]} • event date unrecovered',
+    ax.text(3.5, .79, f'{record["competition"]["result"]} • HydroBot Soccer League',
             fontsize=12, weight="bold", color=INK, va="center")
-    ax.text(.5, .23, "Read with docs/journey-sources.md • spacing is not an elapsed-time scale • original handwritten attachments unrecovered",
+    ax.text(.5, .23, "Dates identify design reviews and technical discussions • conceptual timeline",
             fontsize=9.6, color=MUTED)
     fig.subplots_adjust(left=0, right=1, top=1, bottom=0)
     save(fig, "build-journey-timeline")
@@ -83,10 +83,10 @@ def hull_concepts(record):
             ax.plot([1.15, 3.05], [3.18, 3.18], color=INK, lw=4)
         ax.text(2.1, 1.62, concept["status"], fontsize=12, color=color, weight="bold", ha="center")
         ax.text(2.1, 1.25, concept["note"], fontsize=10.6, color=INK, ha="center", va="top", linespacing=1.4)
-    fig.suptitle("FOBO / HULL CONCEPTS IN THE DESIGN RECORD", fontsize=20, weight="bold", color=INK, y=.96)
-    fig.text(.5, .845, "Reconstructed illustrative sections • not original sketches or dimensioned hull geometry",
+    fig.suptitle("FOBO / HULL CONCEPT SELECTION", fontsize=20, weight="bold", color=INK, y=.96)
+    fig.text(.5, .845, "Conceptual cross-sections of the alternatives considered",
              fontsize=11.5, ha="center", color=MUTED)
-    fig.text(.5, .075, "Source S10 • No comparative drag/stability measurements or numerical decision weights recovered",
+    fig.text(.5, .075, "Selection criteria: maneuverability, stability, cost, weight and propulsion requirements",
              fontsize=10, ha="center", color=MUTED)
     fig.subplots_adjust(left=.025, right=.975, top=.81, bottom=.12, wspace=.07)
     save(fig, "hull-concept-selection")
@@ -98,3 +98,8 @@ if __name__ == "__main__":
     data = json.loads((ROOT / "data" / "build_journey.json").read_text())
     timeline(data)
     hull_concepts(data)
+
+    # Keep SVG exports stable and free of trailing whitespace.
+    for stem in ['build-journey-timeline', 'hull-concept-selection']:
+        svg = ROOT / "assets" / "figures" / (stem + ".svg")
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")

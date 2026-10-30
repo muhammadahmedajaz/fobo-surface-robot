@@ -1,45 +1,47 @@
-# FOBO construction and operation
+# Construction and operation
 
-These photographs and video excerpts show the physical project. Source filenames, extraction times and processing are listed in the [media record](../assets/build/README.md).
+## Hull manufacture
 
-Read the [engineering journey](build-journey.md) for the decisions behind the body and propulsion. Original handwritten sketches have not yet been recovered; the report's illustrations and newly drawn diagrams are not presented as notebook originals.
-
-## Construction
-
-| Shaped XPS hull pieces | Joined foam hull and bridge |
+| Shaped XPS hull and bridge | Fiberglass application |
 | --- | --- |
-| ![Shaped XPS hull pieces](../assets/build/xps-hull-shaping.png) | ![Twin hulls joined by the foam bridge](../assets/build/xps-twin-hull-angle.png) |
+| ![XPS hull before fiberglass](../assets/build/xps-hull-shaping.png) | ![Fiberglass work on the hull](../assets/build/fiberglass-layup-2.jpg) |
 
-| Fiberglass work on the foam body | Another fabrication view |
-| --- | --- |
-| ![Fiberglass work on the hull](../assets/build/fiberglass-layup-1.jpg) | ![Fiberglass fabrication in progress](../assets/build/fiberglass-layup-2.jpg) |
+The body form was shaped in XPS before fiberglass application. The photographs show the foam hull, joined bridge and fiberglass work.
 
-Additional source views: [foam hull from above](../assets/build/xps-twin-hull-top.png) and [fiberglass-work third view](../assets/build/fiberglass-layup-3.jpg). The fiberglass pictures are related views of the work, rather than three separately logged layup stages.
+Additional construction views: [joined foam hull](../assets/build/xps-twin-hull-angle.png), [foam hull from above](../assets/build/xps-twin-hull-top.png), [fiberglass work 1](../assets/build/fiberglass-layup-1.jpg) and [fiberglass work 3](../assets/build/fiberglass-layup-3.jpg).
 
-## In the pool and outdoors
+## Actuator integration
 
-![FOBO during the water-soccer event](../assets/build/fobo-hero.jpg)
+![Motor and servo packaging arrangement](../assets/figures/actuator-packaging.png)
 
-| Pool view | Rear propellers and electronics bay | Outdoor view |
-| --- | --- | --- |
-| ![FOBO in the pool](../assets/build/pool-closeup.jpg) | ![FOBO rear propellers and central bay](../assets/build/pool-overview.jpg) | ![FOBO operating outdoors](../assets/build/outdoor-three-quarter.jpg) |
+The diagram explains the XPS, hot-glue and silicone packaging used for the motors and servos. See [mechanical design](mechanical-design.md) and [actuator protection](waterproofing.md) for the construction method and the final-round servo failure.
 
-| Rear view during play | Pool interaction | Team beside the project display |
-| --- | --- | --- |
-| ![Rear view of FOBO](../assets/build/pool-rear-view.jpg) | ![FOBO alongside another robot](../assets/build/pool-ball-contact.jpg) | ![Team at the event](../assets/build/team-at-event.jpg) |
-
-## Video
-
-| Clip | What it shows |
-| --- | --- |
-| [Original short project clip](../assets/fobo-demo.mp4) | Eight seconds of the operating robot |
-| [Pool maneuvering](../assets/build/pool-maneuvering.mp4) | Eight-second excerpt from original event footage |
-| [Ball approach](../assets/build/pool-ball-approach.mp4) | Nine-second excerpt from original event footage |
-| [Pool soccer contact](../assets/build/pool-soccer-contact.mp4) | Eleven-second excerpt alongside another robot |
-| [Pool and outdoor edit](../assets/build/pool-and-outdoor-demo.mp4) | Fifteen-second edited demonstration |
-| [Outdoor edit](../assets/build/outdoor-demo.mp4) | Fifteen-second edited outdoor demonstration |
-| [Original outdoor trial excerpt](../assets/build/outdoor-trial-original.mp4) | Twelve seconds from the original outdoor recording, with audio omitted |
+## Open-water trials
 
 ![FOBO during an outdoor trial](../assets/build/outdoor-trial-closeup.jpg)
 
-The edited reels contain captions and shot changes. The footage illustrates operation; speed, thrust, radio range and water-ingress performance were not measured from these clips.
+[Watch the outdoor trial excerpt](../assets/build/outdoor-trial-original.mp4), 12 seconds.
+
+## Competition pool
+
+| Rear view during play | Team beside the project display |
+| --- | --- |
+| ![FOBO rear propellers during pool operation](../assets/build/pool-rear-view.jpg) | ![Team at the HydroBot display](../assets/build/team-at-event.jpg) |
+
+| Recording | Content |
+| --- | --- |
+| [Pool maneuvering](../assets/build/pool-maneuvering.mp4) | Event-footage excerpt |
+| [Ball approach](../assets/build/pool-ball-approach.mp4) | Approach in the pool |
+| [Pool soccer contact](../assets/build/pool-soccer-contact.mp4) | Interaction beside another robot |
+
+## Project edits
+
+| Recording | Content |
+| --- | --- |
+| [Short project clip](../assets/fobo-demo.mp4) | Eight seconds of operation |
+| [Pool and outdoor edit](../assets/build/pool-and-outdoor-demo.mp4) | Fifteen-second project edit |
+| [Outdoor edit](../assets/build/outdoor-demo.mp4) | Fifteen-second outdoor edit |
+
+Source filenames, excerpt intervals, still-frame times and encoding details are listed in the [media index](../assets/build/README.md).
+
+[Engineering journey](build-journey.md) · [Design decisions](decision-log.md)

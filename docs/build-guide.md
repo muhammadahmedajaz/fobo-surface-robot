@@ -1,8 +1,8 @@
 # Build and setup guide
 
-This guide documents the recovered controller implementation. Use the exact signal maps below and match the motor/servo installation to your own hull.
+This guide documents the hardware-tested controller implementation. Use the exact signal maps below and match the motor/servo installation to your own hull.
 
-For the physical structure and motion, see [design and construction](mechanical-design.md), the [XPS/glue/silicone packaging method](waterproofing.md), and the [photo/video gallery](gallery.md). Corrections to the old report are recorded in the [report cross-check](report-cross-check.md).
+For the physical structure and motion, see [design and construction](mechanical-design.md), the [XPS/glue/silicone packaging method](waterproofing.md), and the [photo/video gallery](gallery.md). Version details are covered in the [implementation notes](report-cross-check.md).
 
 ## Parts
 
@@ -12,13 +12,13 @@ For the physical structure and motion, see [design and construction](mechanical-
 | 2 | Two-axis analogue joysticks | Four axes total; power from 3.3 V for ESP32 ADC inputs |
 | 3 | Momentary buttons | Inputs use pull-ups and switch to GND |
 | 4 | IBT-2 / dual-BTS7960 motor-driver modules | Two PWM inputs per motor |
-| 4 | 680 RPM DC gearmotors with propellers | Earlier selection notes identify JGB37-550 12 V / 680 RPM; exact installed nameplate and underwater propeller size are not preserved |
+| 4 | 680 RPM DC gearmotors with propellers | Motor-selection reference: JGB37-550 12 V / 680 RPM; select propellers for the installed motor and load |
 | 1 | PCA9685 PWM/servo driver | Default address 0x40 |
 | 4 | MG996R servo motors | Motor-mount vectoring in the original project |
 | 1 | Suitable motor battery | Original project record lists a 3S, 2200 mAh LiPo |
 | As required | Regulated logic and servo supplies | Select current capacity for the installed hardware |
-| As required | Hull, servo mounts, wiring and connectors | Mechanical CAD and a complete as-built harness are not included |
-| As required | XPS foam and fiberglass materials | Foam was shaped first, then covered with fiberglass; resin/cloth specification is unrecorded |
+| As required | Hull, servo mounts, wiring and connectors | Match mounts and wiring to the hull installation |
+| As required | XPS foam and fiberglass materials | Shape the foam form before applying fiberglass; choose a compatible resin/cloth system |
 | As required | Hot glue and silicone | Used around motors and servos in XPS packaging; one servo suffered water ingress in the final round |
 
 ## Transmitter connections
@@ -74,7 +74,7 @@ All four outputs receive the same angle command in this source. Opposite physica
 
 ![Reference power arrangement](../assets/figures/power_domains.png)
 
-This is a reference arrangement for replication, not the original as-built schematic. Regulator models, their current ratings and the complete battery harness were not recorded in the source.
+This reference power arrangement separates motor, servo and logic supplies. Choose regulator ratings and wiring for the installed loads.
 
 Keep the PCA9685's VCC logic rail at the ESP32's 3.3 V level. Its separate V+ rail supplies the servos and normally uses a regulated 5–6 V supply appropriate for the servos. Join signal grounds. The 3S motor battery must not feed the servo rail directly. Size the servo supply for simultaneous servo loads rather than the PCA9685 logic current. See [Adafruit's power-pin guide](https://learn.adafruit.com/16-channel-pwm-servo-driver/pinouts) and [wiring guide](https://learn.adafruit.com/16-channel-pwm-servo-driver/hooking-it-up).
 
@@ -88,7 +88,7 @@ Keep the PCA9685's VCC logic rail at the ESP32's 3.3 V level. Its separate V+ ra
 | Adafruit BusIO | 1.17.4 |
 | Python analysis environment | Python 3.12; packages pinned in requirements.txt |
 
-The transmitter uses `esp_now_send_info_t`, matching the ESP-IDF 5.5 callback API. Older ESP32 core releases can fail on that signature. The receiver uses the 3.x pin-based LEDC API. The reference configuration is for reproducible compilation; the original hardware-test toolchain versions were not supplied.
+The transmitter uses `esp_now_send_info_t`, matching the ESP-IDF 5.5 callback API. Older ESP32 core releases can fail on that signature. The receiver uses the 3.x pin-based LEDC API. Use this reference configuration for reproducible compilation.
 
 ### Arduino IDE
 

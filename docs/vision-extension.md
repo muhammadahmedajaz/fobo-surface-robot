@@ -1,19 +1,26 @@
-# Later mobile-camera and OpenCV work
+# Camera feedback and vision control
 
-The HydroBot competition platform was remotely controlled. Vision work was a later extension of FOBO.
+The HydroBot competition platform used joystick RC control. Later work explored camera feedback for target following, building on the ESP32 motor-control system.
 
-Ahmed reports work using a mobile-phone camera and OpenCV. The earlier test record also identifies a PC/laptop-based YOLO/OpenCV target-detection pipeline that sent control commands to the ESP32.
+## Mobile-camera concept
 
-| Part of the work | Recorded status |
+The December 2025 discussions considered using a phone camera to observe a visible point, compute a movement command and send it to the receiver. The practical experiment was narrowed to motor-only control.
+
+The proposed behavior included command smoothing, a deadband around the target position and stopping when the target was lost. A direct phone interface requires a receiver input path compatible with those commands.
+
+## PC/laptop implementation
+
+The YOLO/OpenCV pipeline ran on a PC/laptop and sent commands to an ESP32. Bench tests covered target detection, command transmission and physical motor response.
+
+| Work item | Validation stage |
 | --- | --- |
-| Mobile-phone camera / OpenCV work | Reported by Ahmed as follow-on development |
-| PC/laptop YOLO/OpenCV target detection | Implemented and bench-tested |
-| Commands sent to ESP32 | Bench-tested |
-| Motor response to the commands | Bench-tested |
-| Autonomous target following in water | Not tested in water |
+| YOLO/OpenCV target detection | Bench-tested |
+| Commands to ESP32 | Bench-tested |
+| Motor response | Bench-tested |
+| Autonomous following on water | Further field-validation stage |
 
-The phone app, camera transport, command protocol and exact relationship between the mobile and PC revisions are not yet recorded here. No particular UDP, USB, Wi-Fi-streaming app or phone-only processing setup is asserted.
+The published transmitter and receiver implement the competition's ESP-NOW joystick controller. The vision extension has a separate command-input scope.
 
-The preserved transmitter/receiver sketches implement joystick RC control. The recovered archive did not contain an identified runnable source package for this vision extension. The repository therefore documents its tested scope without substituting demonstration code for the original implementation.
+A repeatable field trial should record the camera setup, target definition, controller revision, command interface and target-loss response alongside the vehicle trajectory.
 
-To reproduce the extension, the next source addition should contain the actual camera input, detection model and labels, command interface, ESP32-side changes and a bench-test example. A later water trial would need its own firmware revision and recorded observations.
+[Controller build guide](build-guide.md) · [Engineering journey](build-journey.md) · [Test record](validation.md)

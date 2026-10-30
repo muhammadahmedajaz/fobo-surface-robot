@@ -1,123 +1,81 @@
-# FOBO — servo-vectored surface robot
+# FOBO: servo-vectored surface robot
 
-**1st place out of 64 participating projects — HydroBot Soccer League**
+![FOBO surface robot: four rotating thrusters, ESP32 control and first place among 64 HydroBot projects](assets/figures/fobo-project-banner.png)
 
-FOBO is a remotely controlled surface robot with four DC motors on servo-adjustable mounts. Two ESP32 boards exchange joystick commands over ESP-NOW; the onboard receiver drives four IBT-2 modules and a PCA9685 servo board.
+FOBO is a remotely controlled water-soccer robot built around a fiberglass catamaran and four servo-mounted propulsion units. It combines sideways thrust vectoring with differential-thrust pivot turns. The project placed **first among 64 participating projects in the HydroBot Soccer League**.
 
-Built by Muhammad Ahmed and his teammate. Four 680 RPM DC motor/propeller units rotate on MG996R servo mounts, combining vectored thrust with differential-thrust turning. The hull was shaped in XPS foam and covered with fiberglass.
+Two ESP32 boards exchange joystick commands over ESP-NOW. Four IBT-2 drivers control the DC motors, while a PCA9685 drives the MG996R servos that redirect the propellers.
 
-<p align="center"><img src="assets/build/fobo-hero.jpg" width="460" alt="Close view of FOBO's hull, electronics bay and rear propellers at the pool"></p>
+[Engineering journey](docs/build-journey.md) · [Design decisions](docs/decision-log.md) · [Photos and videos](docs/gallery.md) · [Build guide](docs/build-guide.md) · [Firmware](firmware)
 
-[Engineering journey](docs/build-journey.md) · [Dated decisions](docs/decision-log.md) · [Photos and video](docs/gallery.md) · [Design and construction](docs/mechanical-design.md) · [Wiring and setup](docs/build-guide.md) · [Firmware](firmware)
+## Design and development
 
-## Engineering journey
+The design had to combine precise movement and ball-pushing force within a **$150-200 planning budget**. Local component availability, motor weight and handmade actuator protection shaped the implementation.
 
-The recovered discussions begin on **6 November 2025** with a practical question: how could a small-budget water-soccer robot combine directional control, torque, precision and speed? A **$150–200 planning budget**, local motor availability and the weight of four propulsion units shaped the design. The team compared flat, V-shaped and twin-hull concepts, developed rotating thruster mounts, and added rear boosters for ball pushing.
+Flat, V-shaped and twin-hull concepts were considered before selecting a catamaran. Propulsion concepts progressed from fixed units to four rotating motor mounts. XPS foam provided the initial body form, with fiberglass applied over it to form the shell. Ordinary DC motors and servos were packaged in XPS cavities using hot glue and silicone.
 
-The [full engineering journey](docs/build-journey.md) follows those choices through XPS shaping, fiberglass construction, homemade actuator protection, RC control and the later camera extension. It includes the final-round servo ingress failure and explains how proposals, estimates and physical results differed. Real construction photographs accompany the narrative.
+The [engineering case study](docs/build-journey.md) explains these choices, the construction process, the control system and the final-round servo sealing failure. The [decision log](docs/decision-log.md) follows the trade-offs behind the design.
 
-| Explore the development | What it contains |
+| System | Implementation |
 | --- | --- |
-| [Build journey](docs/build-journey.md) | The questions, constraints, design changes and outcomes |
-| [Decision log](docs/decision-log.md) | Eleven records linking problems, alternatives, choices and trade-offs |
-| [Source register](docs/journey-sources.md) | Dated evidence, assistant-advice audit and original material still to recover |
+| Hull | XPS core with fiberglass covering; central electronics and battery bay |
+| Main propulsion | Four 680 RPM DC motors and propellers on MG996R rotating mounts |
+| Motor control | Four IBT-2 modules; 10 kHz, 10-bit PWM |
+| Servo control | PCA9685 at 50 Hz; one shared vector command |
+| Radio | ESP32 to ESP32 over ESP-NOW |
+| Link timeout | 300 ms; motor stop and servo-centre commands |
+| Prototype envelope | Approximately 23 × 17 × 13 in |
 
-## Hull, propulsion and fabrication
+## Construction and water trials
 
-FOBO uses a fiberglass-covered XPS twin-hull body with a central electronics bay. The design evolved from fixed propulsion concepts to four motor/propeller units on MG996R servo mounts. The recorded priorities were maneuverability, stability, ball pushing and construction with locally available parts.
+![FOBO operating in the competition pool](assets/build/pool-rear-view.jpg)
 
-| Foam-stage hull and bridge | Fiberglass fabrication |
+Construction photographs show the XPS body form and fiberglass application. Operating footage follows the assembled platform through outdoor trials and the competition pool.
+
+| Build stage | Video |
 | --- | --- |
-| ![FOBO XPS hull before fiberglass](assets/build/xps-hull-shaping.png) | ![FOBO during fiberglass fabrication](assets/build/fiberglass-layup-2.jpg) |
+| Hull manufacture | [Foam and fiberglass photographs](docs/gallery.md#hull-manufacture) |
+| Outdoor trials | [Water trial excerpt](assets/build/outdoor-trial-original.mp4) |
+| Competition | [Pool maneuvering](assets/build/pool-maneuvering.mp4) · [Ball approach](assets/build/pool-ball-approach.mp4) |
 
-The two-hull design was chosen for stability, maneuverability and the intended reduction of water resistance. A central bay carries the electronics and battery. The approximate project dimensions are **23 × 17 × 13 inches**, with roughly 1–2 inches of reported variation. See the [build story](docs/mechanical-design.md) for construction photographs, layout and design trade-offs.
+See the [gallery](docs/gallery.md) for construction photographs, additional operating footage and the media index.
 
-To keep costs low, ordinary DC motors and the servos were placed in motor-sized and servo-sized XPS cavities, then sealed with **hot glue and silicone**. The motor shafts remained exposed. One servo failed from water ingress during the final round. The [waterproofing account](docs/waterproofing.md) records both the method and that failure so other builders can learn from it.
-
-![XPS, hot-glue and silicone actuator packaging](assets/figures/actuator-packaging.png)
-
-## How it moves
+## Motion and control
 
 ![Forward, lateral and pivot thrust arrangements](assets/figures/propulsion-modes.png)
 
-| Motion | Mechanism |
+| Command | Mechanical response |
 | --- | --- |
-| Forward / backward | All four drive units run in the corresponding direction |
-| Left / right translation | Servos redirect the motor/propeller units, producing sideways thrust |
-| Turn on the spot | Two-motor groups run in opposing directions; swapping directions reverses the turn |
+| Forward / reverse | All four main drives run in the corresponding direction |
+| Left / right translation | Servos redirect the propulsion units to produce lateral thrust |
+| Pivot turn | Two-motor groups drive in opposing directions |
 
-Redirecting the propellers is **vectored thrust**. Producing a turn with opposing drive is **differential thrust**. The supplied firmware uses one shared servo-vector command; physical mount orientation matters when reproducing the motion.
+The receiver uses CH0 for motor steering, CH1 for throttle and CH2 for servo vectoring. Steering selects the opposing-drive mode when it dominates throttle and exceeds the turn threshold. Otherwise the motors follow throttle. All four servo outputs receive the same numerical angle; mounting orientation and motor polarity determine the physical directions.
 
-## Mobile-camera / OpenCV follow-on work
+The transmitter schedules a 21-byte frame every 10 ms. Each frame carries eight channels and a CRC-8. The receiver commands zero motor PWM and centred servos when the link becomes inactive.
 
-Later work included a mobile-phone camera and OpenCV. A PC/laptop YOLO/OpenCV pipeline was bench-tested for target detection, commands to the ESP32 and motor response. Autonomous target following was not tested in water. The [vision-extension record](docs/vision-extension.md) separates these experiments from the competition's RC controller.
-
-## Hardware-tested controller
-
-The firmware is the hardware-tested source supplied by Muhammad Ahmed. The graphs below are calculated command maps and a separate nominal heading-control simulation. The PID model is not an onboard heading controller in this firmware.
-
-## Start here
-
-1. Build the two-board controller using the [parts, pin maps and setup instructions](docs/build-guide.md).
-2. Set the transmitter's `peerMac` to your receiver's Wi-Fi MAC address.
-3. Upload `firmware/transmitter/transmitter.ino` and `firmware/receiver/receiver.ino` to their respective ESP32 boards.
-4. Match servo and motor directions to your mounting arrangement.
-
-The reference compilation target is a classic ESP32 Dev Module, Arduino-ESP32 **3.3.0**, Adafruit PWM Servo Driver **3.0.3**, and Adafruit BusIO **1.17.4**. These are the repository's reference build versions; the original hardware-test environment was not recorded.
-
-## How it works
-
-![Controller architecture](assets/figures/control_architecture.png)
-
-| Input | Receiver function |
-| --- | --- |
-| Channel 0 / joystick 1 X | Motor steering |
-| Channel 1 / joystick 1 Y | Forward/reverse command |
-| Channel 2 / joystick 2 X | Servo vectoring |
-| Channels 3–7 | Transmitted; not used for actuation in this receiver |
-
-The transmitter schedules a frame every 10 ms. The packed payload is 21 bytes and carries eight channels plus CRC-8. The receiver gates actuation on link/failsafe state; its inactive branch commands zero motor PWM and 90-degree servo centres.
-
-## Wiring
+## Build the controller
 
 ![Receiver signal wiring](assets/figures/receiver_wiring.png)
 
-Receiver I²C is remapped to **SDA 32 / SCL 33**, avoiding motor outputs on GPIO 21 and 22. The figure shows signal assignments from the source. Power rails, enable pins and the transmitter wiring are covered in the [build guide](docs/build-guide.md).
+1. Follow the [parts, power and pin maps](docs/build-guide.md).
+2. Set the transmitter's `peerMac` to the receiver's Wi-Fi MAC address.
+3. Upload [transmitter.ino](firmware/transmitter/transmitter.ino) and [receiver.ino](firmware/receiver/receiver.ino) to the two ESP32 boards.
+4. Match motor polarity, servo orientation and travel to the physical mounts.
 
-## Servo vectoring
+The reference build uses a classic ESP32 Dev Module, Arduino-ESP32 **3.3.0**, Adafruit PWM Servo Driver **3.0.3** and Adafruit BusIO **1.17.4**. The published transmitter and integrated receiver are the hardware-tested project firmware.
 
-![Calculated servo command map](assets/figures/servo_command_map.png)
+## Control analysis and vision extension
 
-The supplied receiver commands all four PCA9685 outputs with the same angle: `90 + offset`, constrained to 0–180°. Physical rotation depends on the mounting. Comments describing opposite rear-servo offsets do not match those expressions; the tested source has been preserved.
+Calculated [motor and servo command maps](docs/analysis.md) explain the firmware's deadbands, turning logic and output limits. A separate nominal heading study uses `G(s) = 0.5 / [s(0.8s + 1)]` with PID gains `Kp=3`, `Ki=0.8`, `Kd=0.4`.
 
-`SERVO_MAX_OFFSET = 100` requests more than the ±90° available around the centre, so the ends clip. The source maps angle commands to 600–2400 µs at 50 Hz. The graph describes commands, not measured shaft angles.
+![Nominal simulated heading response](assets/figures/heading_step_response.png)
 
-## Motor mixing
+For a simulated 45° step, the model gives 33.73% overshoot and 8.90 s sampled settling time. These are simulation results. The competition firmware implements joystick RC control.
 
-![Calculated motor command map](assets/figures/motor_command_map.png)
+Later [YOLO/OpenCV work](docs/vision-extension.md) connected PC/laptop target detection to ESP32 commands and motor response in bench tests. Mobile-camera feedback was also explored. On-water autonomous target following is a further validation stage.
 
-Steering selects an opposite-direction turning mode when it dominates throttle and exceeds 200 channel units. Otherwise all motors follow throttle. The map shows signed 10-bit PWM duty for motor groups 0/2 and 1/3; it is not a speed or thrust measurement.
-
-## Heading-control study
-
-![Simulated heading response](assets/figures/heading_step_response.png)
-
-The separate analysis uses `G(s) = 0.5 / [s(0.8s + 1)]` and ideal PID gains `Kp=3`, `Ki=0.8`, `Kd=0.4`. These nominal model parameters were not identified from water-test logs.
-
-| Nominal simulation result | Value |
-| --- | --- |
-| Reference heading | 45° |
-| Overshoot | 33.73% |
-| Sampled 2% settling time | 8.90 s |
-| Sample interval / horizon | 0.025 s / 20 s |
-
-These values describe this model and reference step, not the physical robot's measured performance.
-
-![Simulated plant-input disturbance rejection](assets/figures/disturbance_rejection.png)
-
-The disturbance plot uses `G/(1+CG)` for a disturbance added at the plant input. See [analysis notes](docs/analysis.md) for the equations, the MATLAB correction and the Simulink derivative-filter difference.
-
-## Reproduce the graphics and inspect the data
+## Reproduce the figures
 
 Use Python 3.12 from the repository root:
 
@@ -128,28 +86,13 @@ python -m pip install -r requirements.txt
 python tools/generate_figures.py
 python tools/generate_mechanical_layout.py
 python tools/generate_journey_figures.py
+python tools/generate_project_banner.py
 python -m unittest discover -s tests -v
 ```
 
-Command charts use source-derived parameters; heading charts use the included nominal model. Mechanical and journey illustrations use the recorded build descriptions and [dated history data](data/build_journey.json). PNG and editable SVG figures are stored in `assets/figures/`.
+PNG and editable SVG figures are in [assets/figures](assets/figures). Calculated datasets and model parameters are in [data](data). See the [test record](docs/validation.md) and [technical references](docs/journey-sources.md) for their scope.
 
-| Dataset | Meaning |
-| --- | --- |
-| [Servo map](data/servo_command_map.csv) | Calculated channel → angle → pulse → PCA tick mapping |
-| [Motor map](data/motor_command_map.csv) | Calculated steering/throttle → signed PWM mapping |
-| [Heading response](data/heading_step_response.csv) | Nominal simulated reference tracking |
-| [Disturbance response](data/disturbance_rejection.csv) | Nominal simulated heading deviation |
-| [Parameters](data/parameters.json) | Values read from source and receiver SHA-256 |
-| [Simulation metrics](data/simulation_metrics.json) | Calculated metrics and closed-loop poles |
+Maintained by [Muhammad Ahmed](https://github.com/muhammadahmedajaz). Credit to Muhammad Ahmed and his teammate for the physical project.
 
-## Project notes
-
-- Controller firmware has been hardware-tested, as confirmed by Muhammad Ahmed.
-- FOBO placed first among 64 teams in the HydroBot Soccer League, a team achievement.
-- The clip demonstrates the surface platform. It is not a time-synchronised firmware validation log.
-- This repository contains the tested RC source, construction notes and a separate simulation study. The later vision work is documented; its original scripts are not yet recovered here.
-
-Maintained by [Muhammad Ahmed](https://github.com/muhammadahmedajaz). Credit to Muhammad Ahmed and his teammate for the physical project. Third-party libraries retain their own licences; see [credits](docs/credits.md).
-
-[Changelog](CHANGELOG.md) · [Reproduction and test record](docs/validation.md) · [MIT licence](LICENSE)
+[Credits](docs/credits.md) · [Changelog](CHANGELOG.md) · [MIT licence](LICENSE)
 
