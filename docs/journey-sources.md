@@ -56,7 +56,7 @@ S18: December 2025 project report, `proj_rep (4).pdf`. Construction photographs 
 
 <a id="s19"></a>
 
-S19: project photographs and videos. The [media index](../assets/build/README.md) gives original filenames, frame times and encoding details.
+S19: project photographs and videos. The [media index](../assets/build/README.md) gives original filenames, frame times and encoding details, including the eight development recordings added to the gallery.
 
 <a id="s20"></a>
 

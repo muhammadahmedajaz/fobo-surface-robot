@@ -29,6 +29,10 @@ Four 680 RPM DC motors drive the main propellers. Motor-selection work included 
 
 Each MG996R servo rotates a motor/propeller mount. The motor provides thrust and the servo changes its direction. The concept developed from two thrusters with a turning mechanism, through four fixed units, to four rotating units.
 
+![Propulsion assembly before water operation](../assets/build/development/propulsion-bench.jpg)
+
+[Propulsion bench demonstration](../assets/build/development/propulsion-bench.mp4) · [Motor packaging close-up](../assets/build/development/motor-packaging.mp4)
+
 Two raised rear propellers were added for stronger ball pushing. The published receiver controls the four main DC propulsion units.
 
 ## Motion

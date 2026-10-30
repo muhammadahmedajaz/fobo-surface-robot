@@ -10,6 +10,10 @@ FOBO adapted ordinary DC motors and servos for the water environment using XPS c
 2. Place the motor inside with its shaft extending outside the foam.
 3. Fill and seal around the motor body using hot glue and silicone.
 
+<p align="center"><img src="../assets/build/development/motor-packaging.jpg" width="330" alt="Foam-packaged motor with the shaft and propeller outside"></p>
+
+[Watch the packaged motor](../assets/build/development/motor-packaging.mp4)
+
 The surrounding foam encloses the motor body while the shaft remains available to drive the propeller.
 
 ## Servo packaging

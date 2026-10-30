@@ -25,7 +25,7 @@ GitHub Actions compiles both ESP32 sketches using the reference versions in the 
 
 The development timeline uses design-review dates from `data/build_journey.json`. Hull and component layouts are conceptual illustrations. Generate them with `tools/generate_journey_figures.py`, `tools/generate_mechanical_layout.py` and `tools/generate_project_banner.py`.
 
-The [media index](../assets/build/README.md) records source filenames, selected intervals, frame times and encoding details for the construction photographs and operating clips.
+The eight development videos preserve their visual sequences, use H.264 for playback and omit audio. Their [manifest](../assets/build/development/manifest.json) records source filenames, dimensions, durations and still-frame times.
 
 Command maps describe software outputs. Heading plots describe nominal simulations. The [vision tests](vision-extension.md) cover bench detection, ESP32 commands and motor response.
 

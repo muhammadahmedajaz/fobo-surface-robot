@@ -28,15 +28,16 @@ The [engineering case study](docs/build-journey.md) explains these choices, the 
 
 ## Construction and water trials
 
-![FOBO operating in the competition pool](assets/build/pool-rear-view.jpg)
+![FOBO operating in the competition pool](assets/build/development/competition-run.jpg)
 
-Construction photographs show the XPS body form and fiberglass application. Operating footage follows the assembled platform through outdoor trials and the competition pool.
+The video collection follows the project from foam shaping and an early flotation check to propulsion assembly, open-water operation and the competition pool.
 
 | Build stage | Video |
 | --- | --- |
-| Hull manufacture | [Foam and fiberglass photographs](docs/gallery.md#hull-manufacture) |
-| Outdoor trials | [Water trial excerpt](assets/build/outdoor-trial-original.mp4) |
-| Competition | [Pool maneuvering](assets/build/pool-maneuvering.mp4) · [Ball approach](assets/build/pool-ball-approach.mp4) |
+| Hull manufacture | [Foam shaping](assets/build/development/foam-shaping.mp4) · [Flotation check](assets/build/development/hull-load-check.mp4) |
+| Actuator integration | [Motor packaging](assets/build/development/motor-packaging.mp4) · [Propulsion bench demonstration](assets/build/development/propulsion-bench.mp4) |
+| Outdoor trials | [Launch](assets/build/development/launch-trial.mp4) · [Extended water trial](assets/build/development/open-water-trial.mp4) · [Open-water run](assets/build/development/open-water-run.mp4) |
+| Competition | [Pool run](assets/build/development/competition-run.mp4) |
 
 See the [gallery](docs/gallery.md) for construction photographs, additional operating footage and the media index.
 

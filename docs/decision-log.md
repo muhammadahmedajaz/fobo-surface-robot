@@ -46,7 +46,7 @@ The rear units are visible in operating footage. The published four-IBT-2 contro
 
 ## D07. XPS form and fiberglass shell
 
-XPS foam established the hull and bridge geometry before fiberglass application. The [construction photographs](gallery.md#hull-manufacture) show the shaped body and fiberglass work.
+XPS foam established the hull and bridge geometry before fiberglass application. Manual shaping and sanding are visible in the [construction video](../assets/build/development/foam-shaping.mp4).
 
 The build account specifies three basic layers, with local reinforcement reaching six around curved regions. Mounts were integrated with the fiberglass structure, with wooden inserts and adhesive also used.
 
