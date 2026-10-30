@@ -1,12 +1,14 @@
-# FOBO — ESP32 surface robot
+# FOBO — servo-vectored surface robot
+
+**1st place out of 64 participating projects — HydroBot Soccer League**
 
 FOBO is a remotely controlled surface robot with four DC motors on servo-adjustable mounts. Two ESP32 boards exchange joystick commands over ESP-NOW; the onboard receiver drives four IBT-2 modules and a PCA9685 servo board.
 
-**Hardware-tested controller firmware · 4 motors · 4 servo outputs · reproducible build notes and plots**
+Built by Muhammad Ahmed and his teammate. Four 680 RPM DC motor/propeller units rotate on MG996R servo mounts, combining vectored thrust with differential-thrust turning. The hull was shaped in XPS foam and covered with fiberglass.
 
-![FOBO operating on water](assets/fobo-on-water.png)
+<p align="center"><img src="assets/build/fobo-hero.jpg" width="460" alt="Close view of FOBO's hull, electronics bay and rear propellers at the pool"></p>
 
-[Watch the 8-second project clip](assets/fobo-demo.mp4) · [Build guide](docs/build-guide.md) · [Radio protocol](docs/protocol.md) · [Analysis and data](docs/analysis.md)
+[Photos and video](docs/gallery.md) · [Design and construction](docs/mechanical-design.md) · [Waterproofing method](docs/waterproofing.md) · [Wiring and setup](docs/build-guide.md) · [Firmware](firmware) · [Vision extension](docs/vision-extension.md)
 
 ## Hull, propulsion and fabrication
 
@@ -14,13 +16,31 @@ FOBO uses a fiberglass-covered XPS twin-hull body with a central electronics bay
 
 | Foam-stage hull and bridge | Fiberglass fabrication |
 | --- | --- |
-| ![FOBO XPS hull before finishing](assets/build/xps-twin-hull-angle.png) | ![FOBO during fiberglass fabrication](assets/build/fiberglass-layup-2.jpg) |
+| ![FOBO XPS hull before fiberglass](assets/build/xps-hull-shaping.png) | ![FOBO during fiberglass fabrication](assets/build/fiberglass-layup-2.jpg) |
 
-The [mechanical build draft](docs/mechanical-design-draft.md) collects the construction photographs, design reasoning, component layout, servo-vectoring explanation and waterproofing notes. It also identifies the missing details needed for a complete replication guide. The [report cross-check](docs/report-cross-check.md) records conflicts between the original report and the tested implementation.
+The two-hull design was chosen for stability, maneuverability and the intended reduction of water resistance. A central bay carries the electronics and battery. The approximate project dimensions are **23 × 17 × 13 inches**, with roughly 1–2 inches of reported variation. See the [build story](docs/mechanical-design.md) for construction photographs, layout and design trade-offs.
 
-More operating footage: [pool maneuvering](assets/build/pool-maneuvering.mp4), [ball approach](assets/build/pool-ball-approach.mp4), [pool soccer contact](assets/build/pool-soccer-contact.mp4), [pool/outdoor edit](assets/build/pool-and-outdoor-demo.mp4) and [outdoor edit](assets/build/outdoor-demo.mp4). The [gallery](docs/mechanical-design-draft.md#views-of-the-actual-robot) includes additional hull, rear-propeller and event views.
+To keep costs low, ordinary DC motors and the servos were placed in motor-sized and servo-sized XPS cavities, then sealed with **hot glue and silicone**. The motor shafts remained exposed. One servo failed from water ingress during the final round. The [waterproofing account](docs/waterproofing.md) records both the method and that failure so other builders can learn from it.
 
-## Controller and analysis
+![XPS, hot-glue and silicone actuator packaging](assets/figures/actuator-packaging.png)
+
+## How it moves
+
+![Forward, lateral and pivot thrust arrangements](assets/figures/propulsion-modes.png)
+
+| Motion | Mechanism |
+| --- | --- |
+| Forward / backward | All four drive units run in the corresponding direction |
+| Left / right translation | Servos redirect the motor/propeller units, producing sideways thrust |
+| Turn on the spot | Two-motor groups run in opposing directions; swapping directions reverses the turn |
+
+Redirecting the propellers is **vectored thrust**. Producing a turn with opposing drive is **differential thrust**. The supplied firmware uses one shared servo-vector command; physical mount orientation matters when reproducing the motion.
+
+## Mobile-camera / OpenCV follow-on work
+
+Later work included a mobile-phone camera and OpenCV. A PC/laptop YOLO/OpenCV pipeline was bench-tested for target detection, commands to the ESP32 and motor response. Autonomous target following was not tested in water. The [vision-extension record](docs/vision-extension.md) separates these experiments from the competition's RC controller.
+
+## Hardware-tested controller
 
 The firmware is the hardware-tested source supplied by Muhammad Ahmed. The graphs below are calculated command maps and a separate nominal heading-control simulation. The PID model is not an onboard heading controller in this firmware.
 
@@ -113,7 +133,7 @@ Every chart is generated from source-derived parameters or the included nominal 
 - Controller firmware has been hardware-tested, as confirmed by Muhammad Ahmed.
 - FOBO placed first among 64 teams in the HydroBot Soccer League, a team achievement.
 - The clip demonstrates the surface platform. It is not a time-synchronised firmware validation log.
-- This repository contains RC control and a separate simulation study. Vision/autonomy extension scripts are not included.
+- This repository contains the tested RC source, construction notes and a separate simulation study. The later vision work is documented; its original scripts are not yet recovered here.
 
 Maintained by [Muhammad Ahmed](https://github.com/muhammadahmedajaz). Credit to Muhammad Ahmed and his teammate for the physical project. Third-party libraries retain their own licences; see [credits](docs/credits.md).
 

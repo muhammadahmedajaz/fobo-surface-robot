@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-30T02:17:45.651593</dc:date>
+    <dc:date>2026-10-30T14:52:10.418318</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -289,7 +289,7 @@ L 480.208452 433.029008
     <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="586.8" y="310.758281" transform="rotate(-0 586.8 310.758281)">FOUR ROTATING UNITS</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(586.8 333.190406)">Two front and two rear motor / propeller</text>
+    <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(586.8 333.190406)">Four 680 RPM DC motor / propeller</text>
     <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(586.8 346.549777)">units on MG996R servo mounts.</text>
     <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(586.8 359.909147)">Teal symbols mark approximate locations.</text>
    </g>
@@ -310,7 +310,7 @@ L 480.208452 433.029008
     <text style="font-size: 10.2px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(586.8 575.909147)">mapping is not established by this sketch.</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="32.4" y="623.52" transform="rotate(-0 32.4 623.52)">LAYOUT SKETCH • NOT A FABRICATION DRAWING • Shaft sealing, final dimensions and booster wiring need the builder’s account.</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="32.4" y="623.52" transform="rotate(-0 32.4 623.52)">LAYOUT SKETCH • Approximate reported envelope: 23 × 17 × 13 in • Mounting positions are schematic.</text>
    </g>
   </g>
  </g>
