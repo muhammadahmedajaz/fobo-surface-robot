@@ -1,0 +1,76 @@
+{
+  "project": "FOBO / HydroBot",
+  "reconstructed_on": "2026-10-30",
+  "historical_date_timezone": "UTC",
+  "source_register": "docs/journey-sources.md",
+  "coverage": "Dated conversation excerpts and summaries, report, media, supplied firmware and builder clarification; not a complete chat or attachment export.",
+  "timeline_note": "Dates identify discussions and evidence, not undocumented fabrication dates. Spacing is not proportional to elapsed time.",
+  "milestones": [
+    {
+      "date_start": "2025-11-06",
+      "date_end": "2025-11-06",
+      "label": "6 NOV 2025",
+      "title": "Define the game and the budget",
+      "detail": "Control, torque, precision and speed; $150–200 planning limit. Compare layouts and seek obtainable propulsion.",
+      "record_type": "Planning discussion",
+      "sources": ["S01", "S02", "S03", "S04", "S05", "S06"]
+    },
+    {
+      "date_start": "2025-11-13",
+      "date_end": "2025-11-14",
+      "label": "13–14 NOV 2025",
+      "title": "Question the motor–propeller match",
+      "detail": "1360 versus 680 RPM; available 6 × 4E propeller. Assistant thrust estimates remain unmeasured.",
+      "record_type": "Selection and estimates",
+      "sources": ["S07", "S08"]
+    },
+    {
+      "date_start": "2025-11-30",
+      "date_end": "2025-11-30",
+      "label": "30 NOV 2025",
+      "title": "Explain the chosen architecture",
+      "detail": "Builder describes hull alternatives, rotating thrusters, rear boosters, fiberglass construction and weight trade-offs.",
+      "record_type": "Build retrospective",
+      "sources": ["S09", "S10", "S11"]
+    },
+    {
+      "date_start": "2025-12-20",
+      "date_end": "2025-12-21",
+      "label": "20–21 DEC 2025",
+      "title": "Preserve RC control; explore camera feedback",
+      "detail": "Integrated receiver shared. Phone vision and practical motor-only following considered as a separate extension.",
+      "record_type": "Code and extension discussion",
+      "sources": ["S12", "S13", "S14", "S15"]
+    },
+    {
+      "date_start": "2026-10-18",
+      "date_end": "2026-10-18",
+      "label": "18 OCT 2026 UTC",
+      "title": "Clarify what the vision work demonstrated",
+      "detail": "PC/laptop detection, ESP32 commands and motor response bench-tested. Autonomous water following remains untested.",
+      "record_type": "Later test-scope clarification",
+      "sources": ["S16"]
+    },
+    {
+      "date_start": "2026-10-30",
+      "date_end": "2026-10-30",
+      "label": "30 OCT 2026",
+      "title": "Document the real packaging and failure",
+      "detail": "Builder confirms XPS + hot glue + silicone and the final-round servo ingress failure. Sources are cross-checked.",
+      "record_type": "Builder clarification / reconstruction",
+      "sources": ["S17", "S18", "S19", "S20"]
+    }
+  ],
+  "competition": {
+    "result": "1st among 64 participating projects",
+    "name": "HydroBot Soccer League",
+    "event_date": null,
+    "source": "S17",
+    "note": "Team result; exact event date not recovered. The final-round servo failure is retrospectively reported."
+  },
+  "hull_concepts": [
+    {"id": "flat", "label": "FLAT BASELINE", "status": "Considered", "note": "Named in the retrospective.\nOriginal sketch unrecovered.", "source": "S10"},
+    {"id": "v", "label": "V-SHAPED HULL", "status": "Considered", "note": "Named in the retrospective.\nComparative test data absent.", "source": "S10"},
+    {"id": "catamaran", "label": "DUAL CATAMARAN", "status": "Selected and built", "note": "Stability, maneuverability and\nintended lower resistance.", "source": "S10"}
+  ]
+}

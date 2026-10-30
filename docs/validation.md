@@ -19,6 +19,12 @@ Run `python -m unittest discover -s tests -v`. These checks validate documentati
 
 The GitHub Actions workflow also defines reference ESP32 compilation using the versions in the build guide. Read its actual run result for compilation status; the presence of a workflow is not a passing build result.
 
+## Journey and concept illustrations
+
+Run `python tools/generate_journey_figures.py` to recreate the discussion timeline and hull-concept comparison from `data/build_journey.json`. Their source IDs refer to the [journey register](journey-sources.md). The timeline uses record dates with categorical spacing, and its competition date remains unspecified. The hull sections are illustrative reconstructions, not recovered handwriting or dimensioned geometry.
+
+These figures document the recovered history. They add no physical test result and do not change the preserved firmware.
+
 ## Recording a new hardware run
 
 For a new result, record firmware commit, board/core/library versions, wiring changes, battery and supply configuration, test conditions, actual input and observed result. Use timestamped samples when reporting latency, tracking error or response time.

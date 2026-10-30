@@ -10,6 +10,8 @@ Additional construction photographs come from the supplied December 2025 project
 
 Ahmed's 30 October 2026 account supplies the XPS/hot-glue/silicone packaging method, the final-round servo ingress failure, the four 680 RPM motor arrangement and approximate dimensions. The later mobile-camera/OpenCV work is documented with the scope of the recorded bench tests.
 
+The [engineering journey](build-journey.md) was reconstructed from attributed conversation excerpts/summaries, the supplied report, media and builder clarification. Its [source register](journey-sources.md) records dated user input, assistant contributions, corrections and recovery gaps. New hull/timeline illustrations are reconstructed explanatory figures; no original handwritten page is claimed for them.
+
 ## Dependencies and primary references
 
 - [Espressif Arduino-ESP32 3.3.0 release](https://github.com/espressif/arduino-esp32/releases/tag/3.3.0), based on ESP-IDF 5.5.0.

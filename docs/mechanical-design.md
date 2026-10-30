@@ -4,6 +4,8 @@ FOBO is a remotely controlled surface robot built for water soccer. It placed fi
 
 The design priorities were directional control, pushing the ball, dodging other robots and building within a small budget. These priorities shaped both the hull and propulsion.
 
+For the dated questions, rejected options and development context, read the [engineering journey](build-journey.md) and [decision log](decision-log.md). The [source register](journey-sources.md) distinguishes the recovered conversations from report prose and later clarification.
+
 ## Why a twin-hull body
 
 The team considered a flat platform, a V-shaped hull and a catamaran arrangement. The selected body has two floats joined by a bridge, with an electronics/battery bay near the centre. Stability, maneuverability and reducing water resistance were the recorded design aims. No comparative drag measurements are available for the alternative hulls.
