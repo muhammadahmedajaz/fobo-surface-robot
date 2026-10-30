@@ -8,6 +8,20 @@ FOBO is a remotely controlled surface robot with four DC motors on servo-adjusta
 
 [Watch the 8-second project clip](assets/fobo-demo.mp4) · [Build guide](docs/build-guide.md) · [Radio protocol](docs/protocol.md) · [Analysis and data](docs/analysis.md)
 
+## Hull, propulsion and fabrication
+
+FOBO uses a fiberglass-covered XPS twin-hull body with a central electronics bay. The design evolved from fixed propulsion concepts to four motor/propeller units on MG996R servo mounts. The recorded priorities were maneuverability, stability, ball pushing and construction with locally available parts.
+
+| Foam-stage hull and bridge | Fiberglass fabrication |
+| --- | --- |
+| ![FOBO XPS hull before finishing](assets/build/xps-twin-hull-angle.png) | ![FOBO during fiberglass fabrication](assets/build/fiberglass-layup-2.jpg) |
+
+The [mechanical build draft](docs/mechanical-design-draft.md) collects the construction photographs, design reasoning, component layout, servo-vectoring explanation and waterproofing notes. It also identifies the missing details needed for a complete replication guide. The [report cross-check](docs/report-cross-check.md) records conflicts between the original report and the tested implementation.
+
+More operating footage: [pool maneuvering](assets/build/pool-maneuvering.mp4), [ball approach](assets/build/pool-ball-approach.mp4), [pool soccer contact](assets/build/pool-soccer-contact.mp4), [pool/outdoor edit](assets/build/pool-and-outdoor-demo.mp4) and [outdoor edit](assets/build/outdoor-demo.mp4). The [gallery](docs/mechanical-design-draft.md#views-of-the-actual-robot) includes additional hull, rear-propeller and event views.
+
+## Controller and analysis
+
 The firmware is the hardware-tested source supplied by Muhammad Ahmed. The graphs below are calculated command maps and a separate nominal heading-control simulation. The PID model is not an onboard heading controller in this firmware.
 
 ## Start here

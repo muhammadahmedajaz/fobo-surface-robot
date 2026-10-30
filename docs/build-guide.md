@@ -2,6 +2,8 @@
 
 This guide documents the recovered controller implementation. Use the exact signal maps below and match the motor/servo installation to your own hull.
 
+For the physical structure, design history and fabrication gallery, see the [mechanical build draft](mechanical-design-draft.md). Its unresolved sealing and dimensional details are identified in the [report cross-check](report-cross-check.md).
+
 ## Parts
 
 | Quantity | Item | Notes |
