@@ -1,6 +1,6 @@
 # FOBO build views and demonstrations
 
-Construction photographs and operating footage document the physical FOBO platform.
+Construction photographs, development recordings and operating footage document the physical FOBO platform.
 
 ## Edited project reels
 
@@ -19,7 +19,7 @@ Both reels show the physical FOBO robot. They contain editing, captions and shot
 | `pool-overview.jpg` | First reel at approximately 14.1 s |
 | `outdoor-three-quarter.jpg` | Second reel at approximately 2.7 s |
 
-The first three reel stills are resized to 640 pixels wide. `fobo-hero.jpg` is a full-resolution frame at 14.1 s of the first reel. These reel stills retain their captions. The repository cover uses the separate vector project banner; the main pool photograph is the rear operating view listed below.
+The first three reel stills are resized to 640 pixels wide. `fobo-hero.jpg` is a full-resolution frame at 14.1 s of the first reel. These reel stills retain their captions. The repository cover uses the separate vector project banner, and the main pool photograph comes from the development recordings below.
 
 ## Original uploaded footage
 
@@ -45,3 +45,20 @@ Additional supplied recordings `1000167339.mp4`, `1000167340.mp4`, `1000167341.m
 See the [implementation notes](../../docs/report-cross-check.md) for the relationship between the project report and the published controller.
 
 The mechanical-layout, propulsion-mode and actuator-packaging figures in `assets/figures/` are explanatory drawings based on the project's construction account. They are distinct from these photographs of the actual robot. No hardware has been added to or removed from the photographs.
+
+## Development recordings
+
+Eight complete video streams cover foam shaping, flotation, motor packaging, propulsion assembly, launch, outdoor trials and the competition pool. Playback copies use H.264 at 24 fps, a maximum dimension of 1080 pixels and no audio. Source and published hashes, dimensions and frame times are in [development/manifest.json](development/manifest.json).
+
+| Repository recording | Original source | Duration | Still source time |
+| --- | --- | --- | --- |
+| [foam-shaping.mp4](development/foam-shaping.mp4) | `1000157544.mp4` | 10.5 s | 1.3 s |
+| [hull-load-check.mp4](development/hull-load-check.mp4) | `1000158944.mp4` | 7.1 s | 3.5 s |
+| [motor-packaging.mp4](development/motor-packaging.mp4) | `1000159221.mp4` | 6.8 s | 5.6 s |
+| [propulsion-bench.mp4](development/propulsion-bench.mp4) | `1000162797.mp4` | 5.6 s | 2.7 s |
+| [launch-trial.mp4](development/launch-trial.mp4) | `1000163629.mp4` | 4.7 s | 3.8 s |
+| [open-water-trial.mp4](development/open-water-trial.mp4) | `1000164522.mp4` | 80.3 s | 9.6 s |
+| [open-water-run.mp4](development/open-water-run.mp4) | `1000166073.mp4` | 45.1 s | 5.4 s |
+| [competition-run.mp4](development/competition-run.mp4) | `1000166422.mp4` | 20.1 s | 2.4 s |
+
+Stills use frames extracted from the original recordings at the listed times. The [gallery](../../docs/gallery.md) places them with the corresponding build stages.

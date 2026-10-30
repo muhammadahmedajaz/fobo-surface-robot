@@ -24,7 +24,7 @@ The prototype envelope was approximately 23 × 17 × 13 in. The dimensions descr
 
 ### Shaping the body before applying fiberglass
 
-The body began as shaped XPS foam. This established the hull outline and bridge before the fiberglass shell was applied.
+The body began as shaped XPS foam. This established the hull outline and bridge before the fiberglass shell was applied. The construction footage shows manual shaping and sanding of the foam.
 
 | XPS body form | Fiberglass work |
 | --- | --- |
@@ -32,11 +32,19 @@ The body began as shaped XPS foam. This established the hull outline and bridge 
 
 The construction account specifies three basic fiberglass layers, with additional reinforcement reaching six layers locally around curved regions. The central bay housed the electronics and battery.
 
+[Watch foam shaping](../assets/build/development/foam-shaping.mp4) · [Watch the early flotation check](../assets/build/development/hull-load-check.mp4)
+
+The flotation footage shows the hull supporting a container load during an early water check.
+
 ## Propulsion: changing the direction of thrust
 
 The concept developed from two thrusters with a separate turning mechanism to four fixed units, then to four servo-rotatable propulsion units. The final arrangement gave the main propulsion system a way to redirect thrust as well as reverse it.
 
 Each unit has two distinct functions. A DC motor drives the propeller, while an MG996R servo rotates the motor mount. Redirecting the unit changes the direction of the thrust acting on the hull.
+
+![Main propulsion assembly during a bench demonstration](../assets/build/development/propulsion-bench.jpg)
+
+[Watch the propulsion bench demonstration](../assets/build/development/propulsion-bench.mp4)
 
 The four main units use 680 RPM DC motors. The motor-selection discussion compared a 25GA-370 12 V / 1360 RPM candidate with a JGB37-550 12 V / 680 RPM option. A roughly 6 kgf total thrust target was discussed, along with a 6 × 4E propeller available during development.
 
@@ -69,6 +77,10 @@ Commercial underwater propulsion exceeded the available budget, so ordinary moto
 
 An early motor-pod proposal used a tube, shaft supports and multiple sealing interfaces. That approach was considered too complex for the build. A simpler arrangement used motor-sized and servo-sized cavities in XPS foam, filled and sealed with hot glue and silicone.
 
+<p align="center"><img src="../assets/build/development/motor-packaging.jpg" width="330" alt="DC motor packaged in XPS foam with its propeller shaft outside the enclosure"></p>
+
+[Watch the packaged motor](../assets/build/development/motor-packaging.mp4)
+
 For each DC motor, the foam surrounded the body while the shaft remained outside to drive the propeller. The servos were installed in matching cavities and sealed around their bodies. This adapted inexpensive components to the water environment while retaining the rotating propulsion mechanism.
 
 ### Final-round sealing failure
@@ -96,13 +108,13 @@ The hardware-tested transmitter and integrated receiver form the implementation 
 
 ## Water trials and competition
 
-Operating footage follows the assembled platform into open water and the competition pool. It includes outdoor movement, ball approaches and interaction beside other robots in the event pool.
+The development footage follows the platform into open water and the competition pool. It includes a launch beside a jetty, extended outdoor operation and interaction in the event pool.
 
 | Outdoor operation | Competition pool |
 | --- | --- |
-| ![FOBO during an open-water trial](../assets/build/outdoor-trial-closeup.jpg) | ![FOBO operating in the event pool](../assets/build/pool-rear-view.jpg) |
+| ![FOBO during an open-water trial](../assets/build/development/open-water-trial.jpg) | ![FOBO operating in the event pool](../assets/build/development/competition-run.jpg) |
 
-[Outdoor trial](../assets/build/outdoor-trial-original.mp4) · [Pool maneuvering](../assets/build/pool-maneuvering.mp4) · [Ball approach](../assets/build/pool-ball-approach.mp4) · [Pool interaction](../assets/build/pool-soccer-contact.mp4)
+[Launch](../assets/build/development/launch-trial.mp4) · [Extended water trial](../assets/build/development/open-water-trial.mp4) · [Open-water run](../assets/build/development/open-water-run.mp4) · [Competition run](../assets/build/development/competition-run.mp4)
 
 The competition platform was remotely controlled. Its first-place finish among 64 participating projects is a team result, alongside the engineering experience gained in fabrication, actuator integration and operation on water.
 

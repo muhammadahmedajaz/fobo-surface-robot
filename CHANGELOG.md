@@ -2,6 +2,8 @@
 
 ## 2026-10-30
 
+- Added eight development videos and stills covering manufacture, actuator integration and water trials.
+
 - Reworked the README and engineering case study with project-focused technical language.
 - Added a vector project cover.
 - Reorganized the existing construction photographs and operating clips by build stage.
