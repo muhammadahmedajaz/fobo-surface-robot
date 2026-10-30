@@ -2,6 +2,8 @@
 
 These photographs and video excerpts show the physical project. Source filenames, extraction times and processing are listed in the [media record](../assets/build/README.md).
 
+Read the [engineering journey](build-journey.md) for the decisions behind the body and propulsion. Original handwritten sketches have not yet been recovered; the report's illustrations and newly drawn diagrams are not presented as notebook originals.
+
 ## Construction
 
 | Shaped XPS hull pieces | Joined foam hull and bridge |

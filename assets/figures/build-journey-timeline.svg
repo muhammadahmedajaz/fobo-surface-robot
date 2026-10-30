@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="972pt" height="748.8pt" viewBox="0 0 972 748.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 748.8 
+L 972 748.8 
+L 972 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 221.76 184.32 
+L 930.96 184.32 
+Q 937.44 184.32 937.44 177.84 
+L 937.44 97.2 
+Q 937.44 90.72 930.96 90.72 
+L 221.76 90.72 
+Q 215.28 90.72 215.28 97.2 
+L 215.28 177.84 
+Q 215.28 184.32 221.76 184.32 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #f2f6f7"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 221.76 280.08 
+L 930.96 280.08 
+Q 937.44 280.08 937.44 273.6 
+L 937.44 192.96 
+Q 937.44 186.48 930.96 186.48 
+L 221.76 186.48 
+Q 215.28 186.48 215.28 192.96 
+L 215.28 273.6 
+Q 215.28 280.08 221.76 280.08 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #f2f6f7"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 221.76 375.84 
+L 930.96 375.84 
+Q 937.44 375.84 937.44 369.36 
+L 937.44 288.72 
+Q 937.44 282.24 930.96 282.24 
+L 221.76 282.24 
+Q 215.28 282.24 215.28 288.72 
+L 215.28 369.36 
+Q 215.28 375.84 221.76 375.84 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #f2f6f7"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 221.76 471.6 
+L 930.96 471.6 
+Q 937.44 471.6 937.44 465.12 
+L 937.44 384.48 
+Q 937.44 378 930.96 378 
+L 221.76 378 
+Q 215.28 378 215.28 384.48 
+L 215.28 465.12 
+Q 215.28 471.6 221.76 471.6 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #f2f6f7"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 221.76 567.36 
+L 930.96 567.36 
+Q 937.44 567.36 937.44 560.88 
+L 937.44 480.24 
+Q 937.44 473.76 930.96 473.76 
+L 221.76 473.76 
+Q 215.28 473.76 215.28 480.24 
+L 215.28 560.88 
+Q 215.28 567.36 221.76 567.36 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #f2f6f7"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 221.76 663.12 
+L 930.96 663.12 
+Q 937.44 663.12 937.44 656.64 
+L 937.44 576 
+Q 937.44 569.52 930.96 569.52 
+L 221.76 569.52 
+Q 215.28 569.52 215.28 576 
+L 215.28 656.64 
+Q 215.28 663.12 221.76 663.12 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #f2f6f7"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 194.4 604.8 
+L 194.4 111.6 
+" clip-path="url(#pb908cdc1c4)" style="fill: none; stroke: #c3d8dc; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 36 712.8 
+L 930.96 712.8 
+Q 935.28 712.8 935.28 708.48 
+L 935.28 674.64 
+Q 935.28 670.32 930.96 670.32 
+L 36 670.32 
+Q 31.68 670.32 31.68 674.64 
+L 31.68 708.48 
+Q 31.68 712.8 36 712.8 
+z
+" clip-path="url(#pb908cdc1c4)" style="fill: #fff0df"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="33.12" transform="rotate(-0 36 33.12)">FOBO / THE RECOVERED ENGINEERING RECORD</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="36" y="61.2" transform="rotate(-0 36 61.2)">Discussion dates and later clarifications • not a complete build log</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="maf9d4b273f" d="M 0 5.244044 
+C 1.390737 5.244044 2.7247 4.691499 3.708099 3.708099 
+C 4.691499 2.7247 5.244044 1.390737 5.244044 0 
+C 5.244044 -1.390737 4.691499 -2.7247 3.708099 -3.708099 
+C 2.7247 -4.691499 1.390737 -5.244044 0 -5.244044 
+C -1.390737 -5.244044 -2.7247 -4.691499 -3.708099 -3.708099 
+C -4.691499 -2.7247 -5.244044 -1.390737 -5.244044 0 
+C -5.244044 1.390737 -4.691499 2.7247 -3.708099 3.708099 
+C -2.7247 4.691499 -1.390737 5.244044 0 5.244044 
+z
+" style="stroke: #ffffff; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#pb908cdc1c4)">
+     <use xlink:href="#maf9d4b273f" x="194.4" y="115.2" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="116.51025" transform="rotate(-0 36 116.51025)">6 NOV 2025</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="123.297891" transform="rotate(-0 240.48 123.297891)">Define the game and the budget</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 144.286312)">Control, torque, precision and speed; $150–200 planning limit. Compare layouts and seek obtainable</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 158.021212)">propulsion.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="240.48" y="172.477969" transform="rotate(-0 240.48 172.477969)">Planning discussion  |  S01–S06</text>
+   </g>
+   <g id="PathCollection_2">
+    <g clip-path="url(#pb908cdc1c4)">
+     <use xlink:href="#maf9d4b273f" x="194.4" y="210.96" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="212.27025" transform="rotate(-0 36 212.27025)">13–14 NOV 2025</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="219.057891" transform="rotate(-0 240.48 219.057891)">Question the motor–propeller match</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="240.046313" transform="rotate(-0 240.48 240.046313)">1360 versus 680 RPM; available 6 × 4E propeller. Assistant thrust estimates remain unmeasured.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="240.48" y="268.237969" transform="rotate(-0 240.48 268.237969)">Selection and estimates  |  S07–S08</text>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#pb908cdc1c4)">
+     <use xlink:href="#maf9d4b273f" x="194.4" y="306.72" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="308.03025" transform="rotate(-0 36 308.03025)">30 NOV 2025</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="314.817891" transform="rotate(-0 240.48 314.817891)">Explain the chosen architecture</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 335.806313)">Builder describes hull alternatives, rotating thrusters, rear boosters, fiberglass construction and</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 349.541213)">weight trade-offs.</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="240.48" y="363.997969" transform="rotate(-0 240.48 363.997969)">Build retrospective  |  S09–S11</text>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#pb908cdc1c4)">
+     <use xlink:href="#maf9d4b273f" x="194.4" y="402.48" style="fill: #087f8c; stroke: #ffffff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="403.79025" transform="rotate(-0 36 403.79025)">20–21 DEC 2025</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="410.577891" transform="rotate(-0 240.48 410.577891)">Preserve RC control; explore camera feedback</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 431.566313)">Integrated receiver shared. Phone vision and practical motor-only following considered as a separate</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 445.301213)">extension.</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="240.48" y="459.757969" transform="rotate(-0 240.48 459.757969)">Code and extension discussion  |  S12–S15</text>
+   </g>
+   <g id="PathCollection_5">
+    <defs>
+     <path id="m630d817aa8" d="M 0 5.244044 
+C 1.390737 5.244044 2.7247 4.691499 3.708099 3.708099 
+C 4.691499 2.7247 5.244044 1.390737 5.244044 0 
+C 5.244044 -1.390737 4.691499 -2.7247 3.708099 -3.708099 
+C 2.7247 -4.691499 1.390737 -5.244044 0 -5.244044 
+C -1.390737 -5.244044 -2.7247 -4.691499 -3.708099 -3.708099 
+C -4.691499 -2.7247 -5.244044 -1.390737 -5.244044 0 
+C -5.244044 1.390737 -4.691499 2.7247 -3.708099 3.708099 
+C -2.7247 4.691499 -1.390737 5.244044 0 5.244044 
+z
+" style="stroke: #ffffff; stroke-width: 2"/>
+    </defs>
+    <g clip-path="url(#pb908cdc1c4)">
+     <use xlink:href="#m630d817aa8" x="194.4" y="498.24" style="fill: #b52b3a; stroke: #ffffff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="499.55025" transform="rotate(-0 36 499.55025)">18 OCT 2026 UTC</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="506.337891" transform="rotate(-0 240.48 506.337891)">Clarify what the vision work demonstrated</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 527.326313)">PC/laptop detection, ESP32 commands and motor response bench-tested. Autonomous water following remains</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 541.061213)">untested.</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="240.48" y="555.517969" transform="rotate(-0 240.48 555.517969)">Later test-scope clarification  |  S16</text>
+   </g>
+   <g id="PathCollection_6">
+    <g clip-path="url(#pb908cdc1c4)">
+     <use xlink:href="#m630d817aa8" x="194.4" y="594" style="fill: #b52b3a; stroke: #ffffff; stroke-width: 2"/>
+    </g>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 11.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="36" y="595.31025" transform="rotate(-0 36 595.31025)">30 OCT 2026</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="240.48" y="602.097891" transform="rotate(-0 240.48 602.097891)">Document the real packaging and failure</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 623.086313)">Builder confirms XPS + hot glue + silicone and the final-round servo ingress failure. Sources are cross-</text>
+    <text style="font-size: 10.8px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(240.48 636.821213)">checked.</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="240.48" y="651.277969" transform="rotate(-0 240.48 651.277969)">Builder clarification / reconstruction  |  S17–S20</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b52b3a" x="54" y="694.679375" transform="rotate(-0 54 694.679375)">COMPETITION OUTCOME</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182b3a" x="252" y="695.184375" transform="rotate(-0 252 695.184375)">1st among 64 participating projects • event date unrecovered</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52616b" x="36" y="732.24" transform="rotate(-0 36 732.24)">Read with docs/journey-sources.md • spacing is not an elapsed-time scale • original handwritten attachments unrecovered</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb908cdc1c4">
+   <rect x="0" y="0" width="972" height="748.8"/>
+  </clipPath>
+ </defs>
+</svg>

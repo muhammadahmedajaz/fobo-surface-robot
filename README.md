@@ -8,7 +8,19 @@ Built by Muhammad Ahmed and his teammate. Four 680 RPM DC motor/propeller units 
 
 <p align="center"><img src="assets/build/fobo-hero.jpg" width="460" alt="Close view of FOBO's hull, electronics bay and rear propellers at the pool"></p>
 
-[Photos and video](docs/gallery.md) · [Design and construction](docs/mechanical-design.md) · [Waterproofing method](docs/waterproofing.md) · [Wiring and setup](docs/build-guide.md) · [Firmware](firmware) · [Vision extension](docs/vision-extension.md)
+[Engineering journey](docs/build-journey.md) · [Dated decisions](docs/decision-log.md) · [Photos and video](docs/gallery.md) · [Design and construction](docs/mechanical-design.md) · [Wiring and setup](docs/build-guide.md) · [Firmware](firmware)
+
+## Engineering journey
+
+The recovered discussions begin on **6 November 2025** with a practical question: how could a small-budget water-soccer robot combine directional control, torque, precision and speed? A **$150–200 planning budget**, local motor availability and the weight of four propulsion units shaped the design. The team compared flat, V-shaped and twin-hull concepts, developed rotating thruster mounts, and added rear boosters for ball pushing.
+
+The [full engineering journey](docs/build-journey.md) follows those choices through XPS shaping, fiberglass construction, homemade actuator protection, RC control and the later camera extension. It includes the final-round servo ingress failure and explains how proposals, estimates and physical results differed. Real construction photographs accompany the narrative.
+
+| Explore the development | What it contains |
+| --- | --- |
+| [Build journey](docs/build-journey.md) | The questions, constraints, design changes and outcomes |
+| [Decision log](docs/decision-log.md) | Eleven records linking problems, alternatives, choices and trade-offs |
+| [Source register](docs/journey-sources.md) | Dated evidence, assistant-advice audit and original material still to recover |
 
 ## Hull, propulsion and fabrication
 
@@ -114,10 +126,12 @@ python -m venv .venv
 # Activate the environment using your platform's command.
 python -m pip install -r requirements.txt
 python tools/generate_figures.py
+python tools/generate_mechanical_layout.py
+python tools/generate_journey_figures.py
 python -m unittest discover -s tests -v
 ```
 
-Every chart is generated from source-derived parameters or the included nominal heading model. PNG and editable SVG figures are stored in `assets/figures/`.
+Command charts use source-derived parameters; heading charts use the included nominal model. Mechanical and journey illustrations use the recorded build descriptions and [dated history data](data/build_journey.json). PNG and editable SVG figures are stored in `assets/figures/`.
 
 | Dataset | Meaning |
 | --- | --- |
