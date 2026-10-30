@@ -6,6 +6,10 @@ The HydroBot Soccer League result, first among 64 teams, is a team achievement. 
 
 The short project clip is taken from the FOBO footage previously supplied by Ahmed. A frame from it is used as the README image.
 
+Additional construction photographs come from the supplied December 2025 project report. New pool excerpts come from original videos Ahmed supplied, alongside two recovered edited reels. Captions identify the construction stage or the clip source rather than adopting the report's prototype captions unchanged. See [media provenance](../assets/build/README.md) and the [report cross-check](report-cross-check.md).
+
+Ahmed's 30 October 2026 account supplies the XPS/hot-glue/silicone packaging method, the final-round servo ingress failure, the four 680 RPM motor arrangement and approximate dimensions. The later mobile-camera/OpenCV work is documented with the scope of the recorded bench tests.
+
 ## Dependencies and primary references
 
 - [Espressif Arduino-ESP32 3.3.0 release](https://github.com/espressif/arduino-esp32/releases/tag/3.3.0), based on ESP-IDF 5.5.0.

@@ -2,6 +2,8 @@
 
 This guide documents the recovered controller implementation. Use the exact signal maps below and match the motor/servo installation to your own hull.
 
+For the physical structure and motion, see [design and construction](mechanical-design.md), the [XPS/glue/silicone packaging method](waterproofing.md), and the [photo/video gallery](gallery.md). Corrections to the old report are recorded in the [report cross-check](report-cross-check.md).
+
 ## Parts
 
 | Quantity | Item | Notes |
@@ -10,12 +12,14 @@ This guide documents the recovered controller implementation. Use the exact sign
 | 2 | Two-axis analogue joysticks | Four axes total; power from 3.3 V for ESP32 ADC inputs |
 | 3 | Momentary buttons | Inputs use pull-ups and switch to GND |
 | 4 | IBT-2 / dual-BTS7960 motor-driver modules | Two PWM inputs per motor |
-| 4 | DC motors and propulsion units | Match voltage/current to the actual motors; motor model is not in the recovered source |
+| 4 | 680 RPM DC gearmotors with propellers | Earlier selection notes identify JGB37-550 12 V / 680 RPM; exact installed nameplate and underwater propeller size are not preserved |
 | 1 | PCA9685 PWM/servo driver | Default address 0x40 |
 | 4 | MG996R servo motors | Motor-mount vectoring in the original project |
 | 1 | Suitable motor battery | Original project record lists a 3S, 2200 mAh LiPo |
 | As required | Regulated logic and servo supplies | Select current capacity for the installed hardware |
 | As required | Hull, servo mounts, wiring and connectors | Mechanical CAD and a complete as-built harness are not included |
+| As required | XPS foam and fiberglass materials | Foam was shaped first, then covered with fiberglass; resin/cloth specification is unrecorded |
+| As required | Hot glue and silicone | Used around motors and servos in XPS packaging; one servo suffered water ingress in the final round |
 
 ## Transmitter connections
 
