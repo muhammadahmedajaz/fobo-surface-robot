@@ -1,6 +1,6 @@
 # Calculated maps and nominal heading model
 
-All data files in this repository are calculated or simulated. The physical firmware has been hardware-tested, but the source material did not include measured thrust, motor-speed, radio-latency or heading-response logs.
+The command maps are calculated from the receiver logic. Heading and disturbance responses use a nominal plant model. The physical transmitter and integrated receiver are hardware-tested.
 
 ## Reproduction
 

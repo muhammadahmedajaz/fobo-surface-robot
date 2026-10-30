@@ -1,4 +1,4 @@
-"""Draw a conceptual FOBO component layout from recovered build descriptions.
+"""Draw the conceptual FOBO component layout.
 
 Positions are schematic. This is not an as-built dimensional drawing.
 """
@@ -48,8 +48,8 @@ def draw():
         (7.8,'TWO HULLS','XPS core with fiberglass covering.\nShape here is schematic; use photos\nfor the physical outline.'),
         (6.3,'CENTRAL COMPARTMENT','Electronics bay, separate waterproof\nbox and centrally placed battery\nwere described in the build notes.'),
         (4.8,'FOUR ROTATING UNITS','Four 680 RPM DC motor / propeller\nunits on MG996R servo mounts.\nTeal symbols mark approximate locations.'),
-        (3.3,'TWO REAR BOOSTERS','Rear propellers appear in the footage.\nTheir controller and wiring remain\nto be documented.'),
-        (1.8,'READ WITH THE RECEIVER CODE','The supplied RX uses CH2 for all four\nservo commands. Physical motor-index\nmapping is not established by this sketch.'),
+        (3.3,'TWO REAR BOOSTERS','Raised rear propellers were added\nfor stronger forward pushing.'),
+        (1.8,'READ WITH THE RECEIVER CODE','CH2 supplies one shared vector command.\nMatch motor indices and polarity\nto the installed mounts.'),
     ]
     for y,title,body in notes:
         ax.text(8.15,y,title,fontsize=11,weight='bold',color=INK,va='top')
@@ -59,7 +59,7 @@ def draw():
     out=ROOT/'assets/figures'
     out.mkdir(parents=True,exist_ok=True)
     fig.savefig(out/'mechanical-layout-concept.png',dpi=160)
-    fig.savefig(out/'mechanical-layout-concept.svg')
+    fig.savefig(out/'mechanical-layout-concept.svg', metadata={'Date': None})
     plt.close(fig)
 
 
@@ -67,7 +67,7 @@ def save(fig, name):
     out = ROOT/'assets/figures'
     out.mkdir(parents=True, exist_ok=True)
     fig.savefig(out/(name+'.png'), dpi=160)
-    fig.savefig(out/(name+'.svg'))
+    fig.savefig(out/(name+'.svg'), metadata={'Date': None})
     plt.close(fig)
 
 
@@ -100,7 +100,7 @@ def actuator_packaging():
     fig,ax=plt.subplots(figsize=(13.5,6.6))
     ax.set(xlim=(0,13.5),ylim=(0,6.6));ax.axis('off')
     ax.text(.45,6.13,'FOBO / LOW-COST ACTUATOR PACKAGING',fontsize=21,weight='bold',color=INK)
-    ax.text(.45,5.72,'XPS cavities, hot glue and silicone — as described by the builder',fontsize=12,color=INK)
+    ax.text(.45,5.72,'XPS cavities with hot glue and silicone sealing',fontsize=12,color=INK)
     foam='#f0dbb7'
     for x in (.65,7.25):
         ax.add_patch(FancyBboxPatch((x,1.85),5.1,2.7,boxstyle='round,pad=.05',facecolor=foam,edgecolor=INK,lw=1.2))
@@ -127,3 +127,8 @@ if __name__=='__main__':
     draw()
     propulsion_modes()
     actuator_packaging()
+
+    # Keep SVG exports stable and free of trailing whitespace.
+    for stem in ['mechanical-layout-concept', 'propulsion-modes', 'actuator-packaging']:
+        svg = ROOT / "assets" / "figures" / (stem + ".svg")
+        svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")

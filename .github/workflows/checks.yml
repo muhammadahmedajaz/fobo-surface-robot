@@ -22,6 +22,7 @@ jobs:
       - run: python tools/generate_figures.py --output-dir "$RUNNER_TEMP/fobo-generated"
       - run: python tools/generate_mechanical_layout.py
       - run: python tools/generate_journey_figures.py
+      - run: python tools/generate_project_banner.py
 
   firmware:
     runs-on: ubuntu-latest

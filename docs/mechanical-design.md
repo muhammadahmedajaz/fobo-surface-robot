@@ -1,74 +1,52 @@
-# FOBO: design and construction
+# Mechanical design and construction
 
-FOBO is a remotely controlled surface robot built for water soccer. It placed first among 64 participating projects in the HydroBot Soccer League. The competition result belongs to Muhammad Ahmed and his teammate.
+FOBO uses a fiberglass-covered XPS catamaran with four servo-rotatable propulsion units. The mechanical design supports forward/reverse drive, lateral thrust vectoring and differential-thrust pivot turns.
 
-The design priorities were directional control, pushing the ball, dodging other robots and building within a small budget. These priorities shaped both the hull and propulsion.
+## Hull and structure
 
-For the dated questions, rejected options and development context, read the [engineering journey](build-journey.md) and [decision log](decision-log.md). The [source register](journey-sources.md) distinguishes the recovered conversations from report prose and later clarification.
+The design considered flat, V-shaped and twin-hull arrangements. The catamaran was selected for stability, maneuverability and the intended reduction of water resistance. Two hulls connect through a bridge with a central electronics and battery compartment.
 
-## Why a twin-hull body
-
-The team considered a flat platform, a V-shaped hull and a catamaran arrangement. The selected body has two floats joined by a bridge, with an electronics/battery bay near the centre. Stability, maneuverability and reducing water resistance were the recorded design aims. No comparative drag measurements are available for the alternative hulls.
-
-The XPS foam was the first physical form of the design. The team shaped the foam body and then applied fiberglass over its exterior. The foam-stage and fiberglass-work photographs show that progression in the [construction gallery](gallery.md#construction).
-
-Earlier build notes record three basic fiberglass layers, with additional layers in curved areas, locally reaching six. Mounts were mainly integrated with the fiberglass; wooden inserts and adhesive were also used. Resin type, cloth weight and curing conditions are not recorded, so this account does not prescribe a resin mixing or curing schedule.
-
-## Layout and size
+XPS foam established the body shape before fiberglass application. The build account specifies three basic layers, with reinforcement reaching six locally in curved regions. Mounts were integrated with the fiberglass; wooden inserts and adhesive were also used.
 
 ![Conceptual component arrangement](../assets/figures/mechanical-layout-concept.png)
 
-The layout shows the reported component arrangement; individual mounting positions are schematic. The photographs show the physical outline.
-
-| Item | Project record |
+| Property | Prototype value |
 | --- | --- |
-| Overall length | Approximately 23 in / 58 cm |
-| Overall width | Approximately 17 in / 43 cm |
-| Overall height | Approximately 13 in / 33 cm |
-| Dimensional precision | Ahmed confirms the report's dimensions as approximate, with roughly 1–2 in variation |
-| Bare body mass | Earlier build notes report about 2.5 kg |
-| Equipped mass | Earlier build notes report about 4.5–5 kg |
-| Battery/electronics | Central compartment; earlier project record lists a 3S 2200 mAh LiPo |
+| Length | Approximately 23 in / 58 cm |
+| Width | Approximately 17 in / 43 cm |
+| Height | Approximately 13 in / 33 cm |
+| Dimensional variation | Roughly 1-2 in |
+| Bare body mass | Approximately 2.5 kg |
+| Equipped mass | Approximately 4.5-5 kg |
+| Battery/electronics position | Central compartment |
+| Battery in the earlier build record | 3S 2200 mAh LiPo |
 
-The dimensions describe the prototype's approximate envelope, rather than manufacturing tolerances. The report's separate 18 × 18 × 18 in constraint is inconsistent with that envelope and is not used as a compliance claim.
+The diagram shows the component arrangement schematically. The [construction photographs and videos](gallery.md) show the physical structure.
 
-## Why ordinary DC motors and servos
+## Propulsion and rotating mounts
 
-Commercial underwater propulsion was beyond the project's budget. The team used four ordinary **680 RPM DC motors**, each driving a propeller. Earlier selection notes identify the JGB37-550 12 V, 680 RPM option. The exact installed nameplate and underwater propeller size are not preserved with the source.
+Four 680 RPM DC motors drive the main propellers. Motor-selection work included the JGB37-550 12 V / 680 RPM option. Approximately 300 g per motor made the four drives a significant part of the platform's mass.
 
-Each propulsion unit was mounted on an MG996R servo so the motor and propeller could rotate together. The DC motor provides thrust; the servo changes the direction in which that thrust acts. This is **vectored thrust**.
+Each MG996R servo rotates a motor/propeller mount. The motor provides thrust and the servo changes its direction. The concept developed from two thrusters with a turning mechanism, through four fixed units, to four rotating units.
 
-The propulsion concept evolved from two motors with a separate turning mechanism, to four fixed units, and finally four rotating units. Each motor's approximately 300 g mass and the cost of lighter alternatives were part of the design constraint.
+Two raised rear propellers were added for stronger ball pushing. The published receiver controls the four main DC propulsion units.
 
-## How FOBO moves
+## Motion
 
-![Reported propulsion modes](../assets/figures/propulsion-modes.png)
+![Thrust directions for three planar motions](../assets/figures/propulsion-modes.png)
 
-| Motion reported by the builder | Mechanical action |
+| Motion | Mechanical action |
 | --- | --- |
-| Forward | All four propulsion units drive forward |
-| Backward | All four reverse their drive direction |
-| Left/right translation | The servos redirect the motor/propeller units to produce a lateral thrust component |
-| Pivot on the spot | Two-motor groups drive in opposing directions; reversing the groups reverses the turn |
+| Forward / reverse | All four main propulsion units drive in the corresponding direction |
+| Left / right translation | Servo mounts redirect thrust laterally |
+| Pivot | Two-motor groups drive in opposing directions |
 
-The opposing-drive turn is **differential thrust**. Forward/backward translation, sideways translation and heading rotation correspond to three planar motions: surge, sway and yaw.
+For a unit producing thrust T at angle δ, the planar components are T cos(δ) and T sin(δ). These components explain how changing mount angle redirects force without assigning a thrust value.
 
-For a single unit, thrust T directed at angle δ has components T cos(δ) and T sin(δ). This explains the mechanism without assigning an unmeasured thrust value.
+The receiver uses CH2 as a shared vector command. All four servo outputs receive the same numerical angle, and the physical motor orientation depends on mounting. CH0/CH1 select motor turning or common forward/reverse drive.
 
-The supplied firmware commands all four servo outputs from CH2 with the same numerical angle. CH0/CH1 select motor turning or forward/reverse drive. Mount orientation and motor polarity determine physical directions. Four rotating mounts do not imply four independently commanded servo angles in this receiver. See the [controller build guide](build-guide.md) and [calculated command maps](analysis.md).
+## Actuator packaging
 
-Two raised rear propellers are visible in the footage and were described as boosters for additional pushing force. Their controller, exact parts and wiring are outside the recovered four-IBT-2 receiver source.
+Motors and servos sit in matching XPS cavities sealed with hot glue and silicone. Motor shafts remain outside the surrounding foam. One servo suffered water ingress during the final round.
 
-## Motor and servo protection
-
-The low-cost packaging used motor-sized and servo-sized cavities in XPS foam, sealed with hot glue and silicone. The motor shaft remained outside the foam. Ahmed confirmed this construction directly; it replaces the report's unconfirmed epoxy-around-shaft description.
-
-During the final round, one servo stopped working because water entered it. The packaging worked through much of the project but had an observed ingress failure. The full method and this limitation are recorded in [waterproofing and the final-round failure](waterproofing.md).
-
-## Build and test evidence
-
-- [Construction photos and operating footage](gallery.md)
-- [Media sources and excerpt times](../assets/build/README.md)
-- [Corrections to the original report](report-cross-check.md)
-- [Firmware baseline and software checks](validation.md)
-- [Later mobile-camera/OpenCV work](vision-extension.md)
+The [actuator-protection guide](waterproofing.md) describes the method and its operating lesson. The [engineering journey](build-journey.md) and [decision log](decision-log.md) explain the trade-offs behind the construction.

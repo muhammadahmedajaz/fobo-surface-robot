@@ -20,38 +20,38 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 417.6 
-L 972 417.6 
-L 972 0 
-L 0 0 
+   <path d="M 0 417.6
+L 972 417.6
+L 972 0
+L 0 0
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 32.702184 327.78816 
-L 309.974249 327.78816 
-Q 312.074795 327.78816 312.074795 325.8672 
-L 312.074795 88.9488 
-Q 312.074795 87.02784 309.974249 87.02784 
-L 32.702184 87.02784 
-Q 30.601638 87.02784 30.601638 88.9488 
-L 30.601638 325.8672 
-Q 30.601638 327.78816 32.702184 327.78816 
+    <path d="M 32.702184 327.78816
+L 309.974249 327.78816
+Q 312.074795 327.78816 312.074795 325.8672
+L 312.074795 88.9488
+Q 312.074795 87.02784 309.974249 87.02784
+L 32.702184 87.02784
+Q 30.601638 87.02784 30.601638 88.9488
+L 30.601638 325.8672
+Q 30.601638 327.78816 32.702184 327.78816
 z
 " clip-path="url(#p4a42ea87de)" style="fill: #f2f6f7"/>
    </g>
    <g id="patch_3">
-    <path d="M 71.912375 179.23392 
-L 270.764058 179.23392 
-L 270.764058 212.53056 
-L 71.912375 212.53056 
+    <path d="M 71.912375 179.23392
+L 270.764058 179.23392
+L 270.764058 212.53056
+L 71.912375 212.53056
 z
 " clip-path="url(#p4a42ea87de)" style="fill: #dbe4e8; stroke: #52616b; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
-    <path d="M 54.407825 197.16288 
-L 288.268608 197.16288 
+    <path d="M 54.407825 197.16288
+L 288.268608 197.16288
 " clip-path="url(#p4a42ea87de)" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #80b9c5; stroke-width: 1.4"/>
    </g>
    <g id="text_1">
@@ -61,34 +61,33 @@ L 288.268608 197.16288
     <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="171.338217" y="263.75616" transform="rotate(-0 171.338217 263.75616)">Considered</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(97.119998 295.502344)">Named in the retrospective.</text>
-    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(95.01656 308.982894)">Original sketch unrecovered.</text>
+    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="171.338217" y="295.502344" transform="rotate(-0 171.338217 295.502344)">Flat platform concept</text>
    </g>
   </g>
   <g id="axes_2">
    <g id="patch_4">
-    <path d="M 347.363967 327.78816 
-L 624.636033 327.78816 
-Q 626.736579 327.78816 626.736579 325.8672 
-L 626.736579 88.9488 
-Q 626.736579 87.02784 624.636033 87.02784 
-L 347.363967 87.02784 
-Q 345.263421 87.02784 345.263421 88.9488 
-L 345.263421 325.8672 
-Q 345.263421 327.78816 347.363967 327.78816 
+    <path d="M 347.363967 327.78816
+L 624.636033 327.78816
+Q 626.736579 327.78816 626.736579 325.8672
+L 626.736579 88.9488
+Q 626.736579 87.02784 624.636033 87.02784
+L 347.363967 87.02784
+Q 345.263421 87.02784 345.263421 88.9488
+L 345.263421 325.8672
+Q 345.263421 327.78816 347.363967 327.78816
 z
 " clip-path="url(#p6b822a656f)" style="fill: #f2f6f7"/>
    </g>
    <g id="patch_5">
-    <path d="M 386.574158 170.26944 
-L 585.425842 170.26944 
-L 486 240.70464 
+    <path d="M 386.574158 170.26944
+L 585.425842 170.26944
+L 486 240.70464
 z
 " clip-path="url(#p6b822a656f)" style="fill: #dbe4e8; stroke: #52616b; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_2">
-    <path d="M 369.069609 197.16288 
-L 602.930391 197.16288 
+    <path d="M 369.069609 197.16288
+L 602.930391 197.16288
 " clip-path="url(#p6b822a656f)" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #80b9c5; stroke-width: 1.4"/>
    </g>
    <g id="text_4">
@@ -98,58 +97,57 @@ L 602.930391 197.16288
     <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="486" y="263.75616" transform="rotate(-0 486 263.75616)">Considered</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(411.781781 295.502344)">Named in the retrospective.</text>
-    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(404.981219 308.982894)">Comparative test data absent.</text>
+    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="486" y="295.502344" transform="rotate(-0 486 295.502344)">V-shaped hull concept</text>
    </g>
   </g>
   <g id="axes_3">
    <g id="patch_6">
-    <path d="M 662.025751 327.78816 
-L 939.297816 327.78816 
-Q 941.398362 327.78816 941.398362 325.8672 
-L 941.398362 88.9488 
-Q 941.398362 87.02784 939.297816 87.02784 
-L 662.025751 87.02784 
-Q 659.925205 87.02784 659.925205 88.9488 
-L 659.925205 325.8672 
-Q 659.925205 327.78816 662.025751 327.78816 
+    <path d="M 662.025751 327.78816
+L 939.297816 327.78816
+Q 941.398362 327.78816 941.398362 325.8672
+L 941.398362 88.9488
+Q 941.398362 87.02784 939.297816 87.02784
+L 662.025751 87.02784
+Q 659.925205 87.02784 659.925205 88.9488
+L 659.925205 325.8672
+Q 659.925205 327.78816 662.025751 327.78816
 z
 " clip-path="url(#pe021c9188d)" style="fill: #f2f6f7"/>
    </g>
    <g id="patch_7">
-    <path d="M 713.139035 229.8192 
-L 751.649045 229.8192 
-Q 764.25232 229.8192 764.25232 218.29344 
-L 764.25232 180.51456 
-Q 764.25232 168.9888 751.649045 168.9888 
-L 713.139035 168.9888 
-Q 700.53576 168.9888 700.53576 180.51456 
-L 700.53576 218.29344 
-Q 700.53576 229.8192 713.139035 229.8192 
+    <path d="M 713.139035 229.8192
+L 751.649045 229.8192
+Q 764.25232 229.8192 764.25232 218.29344
+L 764.25232 180.51456
+Q 764.25232 168.9888 751.649045 168.9888
+L 713.139035 168.9888
+Q 700.53576 168.9888 700.53576 180.51456
+L 700.53576 218.29344
+Q 700.53576 229.8192 713.139035 229.8192
 z
 " clip-path="url(#pe021c9188d)" style="fill: #f3d9dc; stroke: #b52b3a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
-    <path d="M 849.674522 229.8192 
-L 888.184531 229.8192 
-Q 900.787807 229.8192 900.787807 218.29344 
-L 900.787807 180.51456 
-Q 900.787807 168.9888 888.184531 168.9888 
-L 849.674522 168.9888 
-Q 837.071247 168.9888 837.071247 180.51456 
-L 837.071247 218.29344 
-Q 837.071247 229.8192 849.674522 229.8192 
+    <path d="M 849.674522 229.8192
+L 888.184531 229.8192
+Q 900.787807 229.8192 900.787807 218.29344
+L 900.787807 180.51456
+Q 900.787807 168.9888 888.184531 168.9888
+L 849.674522 168.9888
+Q 837.071247 168.9888 837.071247 180.51456
+L 837.071247 218.29344
+Q 837.071247 229.8192 849.674522 229.8192
 z
 " clip-path="url(#pe021c9188d)" style="fill: #f3d9dc; stroke: #b52b3a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_3">
-    <path d="M 683.731392 197.16288 
-L 917.592175 197.16288 
+    <path d="M 683.731392 197.16288
+L 917.592175 197.16288
 " clip-path="url(#pe021c9188d)" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #80b9c5; stroke-width: 1.4"/>
    </g>
    <g id="line2d_4">
-    <path d="M 734.144495 163.86624 
-L 867.179072 163.86624 
+    <path d="M 734.144495 163.86624
+L 867.179072 163.86624
 " clip-path="url(#pe021c9188d)" style="fill: none; stroke: #182b3a; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="text_7">
@@ -159,18 +157,18 @@ L 867.179072 163.86624
     <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b52b3a" x="800.661783" y="263.75616" transform="rotate(-0 800.661783 263.75616)">Selected and built</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(720.73944 295.502344)">Stability, maneuverability and</text>
-    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(730.424362 308.982894)">intended lower resistance.</text>
+    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(734.289221 295.502344)">Selected for stability and</text>
+    <text style="font-size: 10.6px; font-family: 'DejaVu Sans'; fill: #182b3a" transform="translate(705.347908 308.982894)">maneuverability, with a central bay.</text>
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="486" y="31.900875" transform="rotate(-0 486 31.900875)">FOBO / HULL CONCEPTS IN THE DESIGN RECORD</text>
+   <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #182b3a" x="486" y="31.900875" transform="rotate(-0 486 31.900875)">FOBO / HULL CONCEPT SELECTION</text>
   </g>
   <g id="text_11">
-   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="486" y="64.728" transform="rotate(-0 486 64.728)">Reconstructed illustrative sections • not original sketches or dimensioned hull geometry</text>
+   <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="486" y="64.728" transform="rotate(-0 486 64.728)">Conceptual cross-sections of the alternatives considered</text>
   </g>
   <g id="text_12">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="486" y="386.28" transform="rotate(-0 486 386.28)">Source S10 • No comparative drag/stability measurements or numerical decision weights recovered</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52616b" x="486" y="386.28" transform="rotate(-0 486 386.28)">Selection criteria: maneuverability, stability, cost, weight and propulsion requirements</text>
   </g>
  </g>
  <defs>
